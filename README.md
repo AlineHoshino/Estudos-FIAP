@@ -7,3 +7,4 @@ Repository with my studies at FIAP
 - Cap 04 - Primeiros passos na construção de um software
 - Cap 05 - Atendendo a pedidos!
 - Cap 06 - Desvendando a cabeça do usuário
+- Cap 07 - Técnicas nunca são demais
