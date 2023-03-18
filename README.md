@@ -10,3 +10,4 @@ Repository with my studies at FIAP
 - Cap 06 - Desvendando a cabeça do usuário
 - Cap 07 - Técnicas nunca são demais
 - Cap 08 - Mãos à obra
+- Cap 09 - Materializando o projeto
