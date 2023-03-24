@@ -17,3 +17,4 @@ Repository with my studies at FIAP
 ## Prototyping:
 
 - [x] Cap 01 - E que comecem os preparativos
+- [x] Cap 02 - Quando a máquina começa a tomar decisões
