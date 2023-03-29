@@ -18,3 +18,4 @@ Repository with my studies at FIAP
 
 - [x] Cap 01 - E que comecem os preparativos
 - [x] Cap 02 - Quando a máquina começa a tomar decisões
+- [x] Cap 03 - Andar em círculos não é necessariamnet ruim 
