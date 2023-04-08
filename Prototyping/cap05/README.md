@@ -1,0 +1,1 @@
+O  relacionamento  mais utilizadode  um  ator  para  com  um  caso  de  uso  é  a associação por comunicação, o que significa que o ator executa a funcionalidade especificada no caso de uso. Ainda temos os casos de uso que se relacionam entre si: inclusão, extensão e generalização.
