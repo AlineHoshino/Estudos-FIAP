@@ -20,3 +20,4 @@ Repository with my studies at FIAP
 - [x] Cap 02 - Quando a máquina começa a tomar decisões
 - [x] Cap 03 - Andar em círculos não é necessariamente ruim 
 - [x] Cap 04 - Quem tem nome na lista?
+- [x] Cap 05 - Entendendo o ponto de vista do usuário
