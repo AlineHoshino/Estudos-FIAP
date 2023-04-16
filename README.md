@@ -21,3 +21,7 @@ Repository with my studies at FIAP
 - [x] Cap 03 - Andar em círculos não é necessariamente ruim 
 - [x] Cap 04 - Quem tem nome na lista?
 - [x] Cap 05 - Entendendo o ponto de vista do usuário
+- [x] Cap 06 - Infelizmente diagramas não são o suficiente
+- [x] Cap 07 - A experiência do usuário é um assunto sério!
+- [x] Cap 08 - Quem vê interface, vê coração
+- [x] Cap 09 - Quanto vale o show?
