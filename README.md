@@ -25,3 +25,9 @@ Repository with my studies at FIAP
 - [x] Cap 07 - A experiência do usuário é um assunto sério!
 - [x] Cap 08 - Quem vê interface, vê coração
 - [x] Cap 09 - Quanto vale o show?
+
+## Modeling:
+
+- [x] Cap 01 - O app começa a tomar forma!
+- [x] Cap 02 - Onde guardar as informações geradas?
+- [x] Cap 03 - Como guardar as informações?
