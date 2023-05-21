@@ -35,4 +35,5 @@ Repository with my studies at FIAP
 - [x] Cap 05 - Agregando ao modelo de dados
 - [x] Cap 06 - Aprendendo a armazenar da maneira correta
 - [x] Cap 07 - Definindo as estruturas físicas
-- [x] Cap 08
+- [x] Cap 08 - Salvo pelo dicionário
+- [x] Cap 09 - Quem arquiva amigo é
