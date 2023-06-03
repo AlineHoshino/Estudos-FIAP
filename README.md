@@ -37,3 +37,10 @@ Repository with my studies at FIAP
 - [x] Cap 07 - Definindo as estruturas físicas
 - [x] Cap 08 - Salvo pelo dicionário
 - [x] Cap 09 - Quem arquiva amigo é
+
+## View:
+
+- [x] Cap01 - Habemus telas do sistema
+- [x] Cap02 - Internet: Como tudo começou.
+- [x] Cap03 - HTML: falando a língua da internet 
+- [x] Cap04 - Aplicando algum estilo 
