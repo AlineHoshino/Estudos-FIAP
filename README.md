@@ -43,4 +43,12 @@ Repository with my studies at FIAP
 - [x] Cap01 - Habemus telas do sistema
 - [x] Cap02 - Internet: Como tudo começou.
 - [x] Cap03 - HTML: falando a língua da internet 
-- [x] Cap04 - Aplicando algum estilo 
+- [x] Cap04 - Aplicando algum estilo
+- [x] Cap05 - Organizando e posicionando seu HTML
+- [x] Cap06 - Semânticas e Grids
+- [x] Cap07 - Formulários
+- [x] Cap08 - Design Responsivo
+- [x] Cap09 - Muito estilo sem sofrimento 
+- [x] Cap10 - Tornnado a interface com o usuário mais dinâmica
+- [x] Cap11 - Javascript essencial
+- [x] Cap12 - A rede social dos desenvolvedores
