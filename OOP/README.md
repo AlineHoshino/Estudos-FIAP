@@ -6,3 +6,4 @@ anos, tornou-se a linguagem padrão de modelagem adotada internacionalmente pela
 indústria de engenharia de software.
 
 Diagramas de sequência são conhecidos como diagramas de eventos ou cenários de eventos.
+![sequencia](https://github.com/AlineHoshino/Estudos-FIAP/assets/83770726/a49d5f69-583b-4148-93c7-8421ed0e33a6)
