@@ -56,8 +56,8 @@ Repository with my studies at FIAP
 ## OOP:
 
 - [x] Cap01 - Entrando de cabeça em orientação a objeto
-- [] Cap02 - 
-- [] Cap03 - 
+- [x] Cap02 - ...porque todos amam diagramas!
+- [x] Cap03 - Pensando software de maneira diferente
 - [] Cap04 - 
 - [] Cap05 - 
 - [] Cap06 - 
