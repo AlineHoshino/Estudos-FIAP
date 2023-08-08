@@ -97,7 +97,8 @@ Vai na seta __ (associações), clica na seta para baixo:
 - Agregação - losango vazado
 - Composição - losango preenchido preto 
 
-Numa relação muitos para muitos que liga com uma tabela só clicar no ícone da bomba do papa-léguas: 
+Numa relação muitos para muitos que liga com uma tabela só clicar no ícone da bomba do papa-léguas: ![papaleguas](https://github.com/AlineHoshino/Estudos-FIAP/assets/83770726/427ed132-1295-4fe8-b872-20fc5be616df)
+
 Clicar na ligação botao da direita desmarcar Name visibility, botão da direita tirar stereotipy visbility
 
 Tracejado se nunca comprar um veiculo nunca vai ter o registro
