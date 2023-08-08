@@ -90,3 +90,4 @@ Clica em control - Controle para gerar os controles
 Quando se trabalha com entidades diferentes para mostrar a relação entre eles em vez de usar a seta de associação usa-se a seta de dependência representado assim: ->
 
 Um mesmo controle compartilhado por mais de uma tela, duas telas usando um controle
+![exemplo astah-classes](https://github.com/AlineHoshino/Estudos-FIAP/assets/83770726/760e9d80-d543-4d00-8177-bf50a52e4463)
