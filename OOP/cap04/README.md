@@ -28,18 +28,16 @@ Associações - vínculos entre as classes
 As associações possuem algumas características importantes: multiplicidade,
 navegabilidade, papéis e nome da associação e direção de leitura.
 
-
-Assim como na Composição, a Agregação é um relacionamento do tipo todo-
+Associação simples é o relacionamento mais comum - exemplo classe Imovel pode se relacionar ou não com uma locação
+Asssociação por composição - Exemplo matrícula aluno - não existe matrícula sem aluno
+A Agregação é um relacionamento do tipo todo-
 parte. Podemos dizer que a informação contida no objeto parte é complementar ao
 objeto todo, não é essencial para constituir a informação relacionada ao conceito do
 negócio do objeto todo.
-
 Exemplo: Venda e desconto
 
 Classe associativa - relacao muito para muitos 
 exemplo- classe equipe - classe funcionário - classe associativa ingresso
-
-Generalização - conhecida como herança- objeto geral(super classe) com um objeto específico.
 
 Generalização - conhecida como herança- objeto geral(super classe) com um objeto específico.
 
@@ -91,3 +89,17 @@ Quando se trabalha com entidades diferentes para mostrar a relação entre eles 
 
 Um mesmo controle compartilhado por mais de uma tela, duas telas usando um controle
 ![exemplo astah-classes](https://github.com/AlineHoshino/Estudos-FIAP/assets/83770726/760e9d80-d543-4d00-8177-bf50a52e4463)
+
+Agregação - Exemplo- Uma concessionária consegue viver sem uma loja é só uma agregada
+Mas se eu disser que uma concessionária depende de ter pelo menos uma loja -composição
+
+Vai na seta __ (associações), clica na seta para baixo:
+- Agregação - losango vazado
+- Composição - losango preenchido preto 
+
+Numa relação muitos para muitos que liga com uma tabela só clicar no ícone da bomba do papa-léguas: 
+Clicar na ligação botao da direita desmarcar Name visibility, botão da direita tirar stereotipy visbility
+
+Tracejado se nunca comprar um veiculo nunca vai ter o registro
+
+Para fazer generalização(herança) - Genericamente falando um cliente é uma pessoa- clica na setinha do lado da bombinha do papa léguas.
