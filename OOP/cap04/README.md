@@ -103,3 +103,15 @@ Clicar na ligação botao da direita desmarcar Name visibility, botão da direit
 Tracejado se nunca comprar um veiculo nunca vai ter o registro
 
 Para fazer generalização(herança) - Genericamente falando um cliente é uma pessoa- clica na setinha do lado da bombinha do papa léguas.
+
+Como o cliente herda de Pesso não pode esquecer na hroa de castrar de passar os atributos herdados
+
+Só conectando uma camada com a outra chamar a seta de dependência
+
+A concessionaria depende do controle de cadastro de concessionária e o controle depende da tela de cadastro de concessionária
+
+Posso fazer um controle sendo acionado por duas telas, ou uma tela que chama outra tela
+
+Separar cadastro de cliente de conulta de cliente para aumentar a segurança
+
+A Boundary pode ser uma tela, outras vezes pode ser um software como o comunicador Detran
