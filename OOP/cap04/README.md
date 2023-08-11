@@ -116,3 +116,6 @@ Posso fazer um controle sendo acionado por duas telas, ou uma tela que chama out
 Separar cadastro de cliente de conulta de cliente para aumentar a segurança
 
 A Boundary pode ser uma tela, outras vezes pode ser um software como o comunicador Detran
+
+![conc](https://github.com/AlineHoshino/Estudos-FIAP/assets/83770726/e2980065-a1f9-4034-a48f-3e170ed7fe71)
+
