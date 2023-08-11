@@ -58,7 +58,7 @@ Repository with my studies at FIAP
 - [x] Cap01 - Entrando de cabeça em orientação a objeto
 - [x] Cap02 - ...porque todos amam diagramas!
 - [x] Cap03 - Pensando software de maneira diferente
-- [] Cap04 - 
+- [x] Cap04 - Diagramando as estruturas!
 - [] Cap05 - 
 - [] Cap06 - 
 - [] Cap07 - 
