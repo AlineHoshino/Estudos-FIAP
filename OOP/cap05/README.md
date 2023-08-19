@@ -42,7 +42,7 @@ System.out.Println(); existe também a instrução System.out.Print(); sendo que
 diferença entre eles é a quebra de linha. O Println pula uma linha no final, enquanto
 o Print somente imprime a informação e continua na mesma linha.
 
-Informações inseridas pelo usuário
+Informações inseridas pelo usuário usa o Scanner.
 Scanner sc = new Scanner(System.in);
 Scanner sc = new Scanner(System.in);
 int idade = sc.nextInt();

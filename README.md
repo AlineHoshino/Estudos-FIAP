@@ -59,8 +59,8 @@ Repository with my studies at FIAP
 - [x] Cap02 - ...porque todos amam diagramas!
 - [x] Cap03 - Pensando software de maneira diferente
 - [x] Cap04 - Diagramando as estruturas!
-- [] Cap05 - 
-- [] Cap06 - 
+- [x] Cap05 - Um pouco de Java nesta forma de pensar
+- [] Cap06 -  Software de classe
 - [] Cap07 - 
 - [] Cap08 - 
 - [] Cap09 - 
