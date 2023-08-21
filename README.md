@@ -60,7 +60,7 @@ Repository with my studies at FIAP
 - [x] Cap03 - Pensando software de maneira diferente
 - [x] Cap04 - Diagramando as estruturas!
 - [x] Cap05 - Um pouco de Java nesta forma de pensar
-- [] Cap06 -  Software de classe
+- [x] Cap06 -  Software de classe
 - [] Cap07 - 
 - [] Cap08 - 
 - [] Cap09 - 

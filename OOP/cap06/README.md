@@ -65,3 +65,37 @@ Este o construtor com parametros:
 	}
 
 Como debugar- Coloque um ponto do lado da linha que voce quer, aperte no inseto, F6, passe o mouse por cima para ver os dados daquela conta
+Posso criar um construtor de forma automática botão direito, source, generate constructorusing fields
+
+	int agencia; => são friendly não existe modificador ao declarar
+	int numero;
+	double saldo;
+
+	public Conta(int numero, double saldo) {  => public qualquer outra classe pode construir um objeto a partor desses construtores
+		this.numero = numero;
+		this.saldo = saldo;
+	}
+
+	public class ContaCorrente {
+	
+	/**
+	 * Realiza um depósito na conta corrente
+	 * @param agencia O número da agencia
+	 * @param numero O número da conta
+	 * @param valor O valor que será depositado
+	 * @return O número do protocolo de confirmação
+	 */
+	public int depositar(int agencia, long numero, double valor){
+		//implementação do método
+		return 0;
+	}
+	
+}
+
+@author - desenvolvedor
+
+/** para criar um javadoc
+Depois vai em Project generateJavadoc
+Clica em finish, depois vai gerar no menu do lado uma pasta doc, clica no index.html, botao direito do mouse open with - web browser
+Ficando assim:
+![javaweb](https://github.com/AlineHoshino/Estudos-FIAP/assets/83770726/35e81b5c-7b57-42e0-88bb-46afb4bd661e)
