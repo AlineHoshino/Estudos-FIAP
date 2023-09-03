@@ -60,9 +60,9 @@ Repository with my studies at FIAP
 - [x] Cap03 - Pensando software de maneira diferente
 - [x] Cap04 - Diagramando as estruturas!
 - [x] Cap05 - Um pouco de Java nesta forma de pensar
-- [x] Cap06 -  Software de classe
-- [] Cap07 - 
-- [] Cap08 - 
-- [] Cap09 - 
+- [x] Cap06 - Software de classe
+- [x] Cap07 - Quando as partes conversam 
+- [x] Cap08 - Como a herança pode em ajudar a programar
+- [x] Cap09 - Inteligencia artificial
 - [] Cap10 - 
 - [] Cap11 - 
