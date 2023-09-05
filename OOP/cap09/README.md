@@ -1,0 +1,2 @@
+A Computação Cognitiva pode ser considerada como um campo interdisciplinar que englobaelementos de IA, Machine Learning e Deep Learning
+Enquanto a IA concentra-seamplamente na criação de máquinas inteligentes, a Computação Cognitiva enfatiza especificamente o desenvolvimento de sistemas que podem entender, interpretar e responder a dados complexos e não estruturados, como linguagem natural, imagens e entradas sensoriais.
