@@ -62,7 +62,21 @@ Repository with my studies at FIAP
 - [x] Cap05 - Um pouco de Java nesta forma de pensar
 - [x] Cap06 - Software de classe
 - [x] Cap07 - Quando as partes conversam
-- [] Cap08 - 
-- [] Cap09 - 
-- [] Cap10 - 
-- [] Cap11 - 
+- [x] Cap08 - Como a herança pode me ajudar a programar melhor?
+- [x] Cap09 - Inteligência Artificial
+- [x] Cap10 - O que são Chatbots?
+- [x] Cap11 - Plataforma de Chatbots
+
+## Model:
+
+- [x] Cap01 - E o sistema passa a falar com o banco de dados!
+- [x] Cap02 - Lidando com vários dados... em Java!
+- [x] Cap03 - 
+- [x] Cap04 - 
+- [x] Cap05 - 
+- [x] Cap06 - 
+- [x] Cap07 - 
+- [x] Cap08 - 
+- [x] Cap09 - 
+- [x] Cap10 - 
+- [x] Cap11 - 
