@@ -71,8 +71,8 @@ Repository with my studies at FIAP
 
 - [x] Cap01 - E o sistema passa a falar com o banco de dados!
 - [x] Cap02 - Lidando com vários dados... em Java!
-- [x] Cap03 - 
-- [x] Cap04 - 
+- [x] Cap03 - Tornando as coisas físicas
+- [x] Cap04 - ... e as estruturas do banco são finalmente criadas!
 - [x] Cap05 - 
 - [x] Cap06 - 
 - [x] Cap07 - 
