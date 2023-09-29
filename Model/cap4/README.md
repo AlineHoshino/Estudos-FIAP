@@ -56,3 +56,5 @@ START WITH 1
 MAXVALUE 999
 NOCACHE
 NOCYCLE;
+
+Pagina 5 sobre o DDL- botao direito visualizar DDL
