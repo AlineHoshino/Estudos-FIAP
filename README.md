@@ -74,7 +74,7 @@ Repository with my studies at FIAP
 - [x] Cap03 - Tornando as coisas físicas
 - [x] Cap04 - ... e as estruturas do banco são finalmente criadas!
 - [x] Cap05 - Exceções à regra
-- [x] Cap06 - 
+- [x] Cap06 - Armazenando e manipulando informações no banco 
 - [x] Cap07 - 
 - [x] Cap08 - 
 - [x] Cap09 - 
