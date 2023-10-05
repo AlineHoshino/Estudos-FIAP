@@ -75,7 +75,7 @@ Repository with my studies at FIAP
 - [x] Cap04 - ... e as estruturas do banco são finalmente criadas!
 - [x] Cap05 - Exceções à regra
 - [x] Cap06 - Armazenando e manipulando informações no banco 
-- [x] Cap07 - 
+- [x] Cap07 - Consulte o oráculo
 - [x] Cap08 - 
 - [x] Cap09 - 
 - [x] Cap10 - 
