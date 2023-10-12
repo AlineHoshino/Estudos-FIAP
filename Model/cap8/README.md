@@ -126,3 +126,6 @@ System.err.println("O Driver JDBC não foi
 encontrado!");
 e.printStackTrace();
 }
+
+
+ACID é uma sigla para as quatro principais características que definem uma transação: Atomicidade, Consistência, Isolamento e Durabilidade
