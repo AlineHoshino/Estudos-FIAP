@@ -76,7 +76,7 @@ Repository with my studies at FIAP
 - [x] Cap05 - Exceções à regra
 - [x] Cap06 - Armazenando e manipulando informações no banco 
 - [x] Cap07 - Consulte o oráculo
-- [x] Cap08 - 
+- [x] Cap08 - Quando o café javanês consulta o oráculo
 - [x] Cap09 - 
 - [x] Cap10 - 
 - [x] Cap11 - 
