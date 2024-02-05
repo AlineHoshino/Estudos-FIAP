@@ -80,3 +80,7 @@ Repository with my studies at FIAP
 - [x] Cap09 - IA generativa
 - [x] Cap10 - Governança ambiental, social e corporativa ESG
 - [x] Cap11 - Grand Finale
+
+## App world
+
+- [x] Cap01 - O show tem que continuar!
