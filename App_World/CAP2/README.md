@@ -285,3 +285,7 @@ fun main(args: Array<String>) {
 var filteredNames = names.filter({it.length < 6})
 println(filteredNames)
 //["João", "Paulo", "Ana", "Carla"]
+
+open para deixar que possa fazer herança numa classe
+
+Usar o overirde para dizser: sobrepõe esse método
