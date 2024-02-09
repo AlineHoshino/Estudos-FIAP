@@ -15,4 +15,12 @@ A fonte é escalável
 TextAlign.Center fica centralizado
 colors = ButtonDefaults.buttonColors(containerColor = Color.Green)
 Essa opção colors com buttonDefaults é para mudar a cor do conteudo do botão, a superficie do botão
-Se abrir o parente do color da para colocar a cor em hexadecimal.
+Se abrir o parenteses do color da para colocar a cor em hexadecimal.
+O bButton tem o shape para decidir se quser o botao redondo ou retangular por exemplo
+Spacer - coloca espaço entre os componentes
+Compose tem de lembrar do valor que tinha antes
+ var idade = remember {
+        mutableStateOf(0)
+    }
+
+usar o remember ele cuida do estado da tela, guarda na forma de objeto. para acessar esse objeto usa o values
