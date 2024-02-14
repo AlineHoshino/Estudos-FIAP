@@ -84,3 +84,9 @@ Repository with my studies at FIAP
 ## App world
 
 - [x] Cap01 - O show tem que continuar!
+- [x] Cap02 - Cidades inteligentes
+
+Trilha Android
+
+- [x] Cap2A -Introdução ao Kotlin
+- [x]
