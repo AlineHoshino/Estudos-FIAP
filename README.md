@@ -89,4 +89,7 @@ Repository with my studies at FIAP
 Trilha Android
 
 - [x] Cap2A -Introdução ao Kotlin
-- [x]
+- [x] Cap3A - A casa do Android
+- [x] Cap4A - Introdução ao Jetpack Compose
+- [x] Cap5A - Layouts e componentes básicos com Jetpack Compose
+- [x] Cap6A - Componnetes básicos com Jetpack Compose
