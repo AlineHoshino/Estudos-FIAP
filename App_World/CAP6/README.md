@@ -6,4 +6,8 @@ No nome do recursos não deve utilizar maiusculas, hifen e caractere especial
 Clica na fonte colcada botão direito, refactor e rename
 Na pasta ui.theme, tem o type.kt que é onde ficam as fontes
 va nesse type.kt e crie uma variavel
-val Kablamo = FontFamily(Font(R.font.kablamo_regular)) - font é a pasta 
+val Kablamo = FontFamily(Font(R.font.kablamo_regular)) - font é a pasta
+Entrada de dados do usuário:
+
+
+Gerenciando estado de um textfield:
