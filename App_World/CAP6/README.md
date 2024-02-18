@@ -35,4 +35,15 @@ Definir o teclado:
 
 
 Mais cores para o Textfiled:
+colors = TextFieldDefaults.colors(focusedTextColor = Color.Magenta, unfocusedTextColor = Color.Gray)
+Cor muda se o texto está focado ou não.
+
+        Row(verticalAlignment = Alignment.CenterVertically) {
+            Checkbox(checked = python , onCheckedChange = {
+                python = it
+            })
+            Text(text = "Python")
+        }
+
+No checkbox cria uma variavel booleana
 
