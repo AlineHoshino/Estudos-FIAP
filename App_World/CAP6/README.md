@@ -14,4 +14,25 @@ Obrigatório, onValueChange é uma função
 Os desenhos ficam no res na pasta drawable, para adicionar icones, va em res, drawable, botão direito new, vector asset e clique para escolher seu desenho 
 trailingIcon - coloca um icone no final 
 leadingIcon - coloca icone no início
+leadingIcon = {
+                Icon(painter = painterResource(id = R.drawable.person_24), contentDescription = "icone de usuario")
+            }
 Gerenciando estado de um textfield:
+Log.i - para ver o log 
+para não ter de digitar a variavel.value e oegar o valor direto faça ssim:
+var texto by remember{
+        mutableStateOf("")
+    }
+Coloque o by e faça os imports
+
+Dentro do código podemos chamar uma biblioteca padrão cchamada Icons que possui ícones.
+imageVector = Icons.Default.Home
+Definir o teclado:
+ keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number)
+ Assim o teclado só vai aceitar números
+  keyboardOptions = KeyboardOptions(capitalization = KeyboardCapitalization.Sentences)
+  keyboardOptions = KeyboardOptions(capitalization = KeyboardCapitalization.Words) - cada plavra começa com maiúscula
+
+
+Mais cores para o Textfiled:
+
