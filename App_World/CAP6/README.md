@@ -46,4 +46,5 @@ Cor muda se o texto está focado ou não.
         }
 
 No checkbox cria uma variavel booleana
+No radioButton faça uma lógica de atribuir um valor para cada um e só se for aquele valor selecionado é que escolhe.
 
