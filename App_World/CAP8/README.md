@@ -26,3 +26,36 @@ Preciso que a tela de login receba a navController para eu ter o histórico de n
                 Text(text = "Sair", fontSize = 20.sp, color = Color.Blue)
             }
             
+
+Passar valor de uma tela para outra - exemplo ver os detalhes do produto, passar o id daquele produto 
+
+                        composable(route = "perfil/{nome}")
+                            val nome = it.arguments
+
+Na NavBackStackEntry que eles chamam de it, tem a opção arguments que é onde fica os argumentos que são passados via rota 
+                            val nome = it.arguments?.getString("nome")
+
+Coloco o ponto de interrogação para mostrar que ue sei que virá um nulo,uso o getString porque sei que virá uma String, coloco "nome" que é o nome do parametro que vem na rota {nome}
+                            PerfilScreen(navController, nome!!)
+                            !! - double bang
+Chamar uma tela e ser opcional o valor
+
+Como passar parametros opcionais:
+                        composable(
+                            route = "smart?numero={numero}",
+                            arguments = listOf()
+
+depois do nome da rota passar? colocar o nome do argumento, e um segundo paraemtro que é o arguments que recebe uma lista
+
+deixa um default Value e coloca o nome do argumento que quer recuperar ficando assim:
+                            arguments = listOf(navArgument(name = "numero"){
+                              defaultValue = "sem valor"
+
+Caso eu não passe o argumento na rota ficando assim:
+            Button(
+                onClick = { navController.navigate("smart") },
+fica o valor default que é sem valor
+
+
+Multiplos parametros entre telas:
+
