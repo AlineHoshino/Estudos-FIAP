@@ -59,3 +59,19 @@ fica o valor default que é sem valor
 
 Multiplos parametros entre telas:
 
+                        composable(
+                            route = "perfil/{nome}/{idade}",
+                            arguments = listOf(
+                                navArgument(name = "nome"){
+                                    type = NavType.StringType
+                                },
+                                navArgument(name = "idade"){
+                                    type = NavType.IntType
+                                }
+                            )
+                        ){
+                            val nome = it.arguments?.getString("nome")
+                            val idade = it.arguments?.getInt("idade")
+                            PerfilScreen(navController, nome!!, idade!!)
+                        }
+
