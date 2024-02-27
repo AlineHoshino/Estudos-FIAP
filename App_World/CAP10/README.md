@@ -25,3 +25,13 @@
 
 Para não colocar o valor literal, coloc os valores no resource e depois chama  o resource com os valores
 Validar a entrada de dados.
+
+onValueChange = {
+                       if(it.length < tamanhoMaximo) password = it
+                    },
+isError modifica a cor para saber que está com erro 
+
+if(erroEmail){
+                    Text(text = "O email é obrigatório")
+                }
+
