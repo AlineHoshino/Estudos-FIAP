@@ -85,12 +85,18 @@ Repository with my studies at FIAP
 
 - [x] Cap01 - O show tem que continuar!
 - [x] Cap02 - Cidades inteligentes
+- [x] Cap03 - Um mundo de oportunidades
 
 Trilha Android
 
-- [x] Cap2A -Introdução ao Kotlin
-- [x] Cap3A - A casa do Android
-- [x] Cap4A - Introdução ao Jetpack Compose
-- [x] Cap5A - Layouts e componentes básicos com Jetpack Compose
-- [x] Cap6A - Componnetes básicos com Jetpack Compose
-- [x] Cap7A - Uso de cards e imagens
+- [x] Cap2A  - Introdução ao Kotlin
+- [x] Cap3A  - A casa do Android
+- [x] Cap4A  - Introdução ao Jetpack Compose
+- [x] Cap5A  - Layouts e componentes básicos com Jetpack Compose
+- [x] Cap6A  - Componnetes básicos com Jetpack Compose
+- [x] Cap7A  - Uso de cards e imagens
+- [x] Cap8A  - Navegação e Fluxo entre telas
+- [x] Cap9A  - Gestão de estado no Jetpack Compose
+- [x] Cap10A - Internacionalização e Validação de entrada de dados
+- [x] Cap11A - Persistência de dados locais
+- [x] Cap12A - Listas e Consumo de Api externa
