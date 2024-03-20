@@ -100,3 +100,4 @@ Trilha Android
 - [x] Cap10A - Internacionalização e Validação de entrada de dados
 - [x] Cap11A - Persistência de dados locais
 - [x] Cap12A - Listas e Consumo de Api externa
+- [x] Cap13A - Animação e Multimídia
