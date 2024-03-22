@@ -101,3 +101,8 @@ Trilha Android
 - [x] Cap11A - Persistência de dados locais
 - [x] Cap12A - Listas e Consumo de Api externa
 - [x] Cap13A - Animação e Multimídia
+
+## Database Programming
+
+- [x] Cap01 - Programar dentro do banco de dados, o sonho
+- [x] Cap02 - Programando dentro do banco de dados
