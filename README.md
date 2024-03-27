@@ -107,3 +107,4 @@ Trilha Android
 - [x] Cap01 - Programar dentro do banco de dados, o sonho
 - [x] Cap02 - Programando dentro do banco de dados
 - [x] Cap11 - Identificando oportunidades
+- [x] Cap12 - Validating your startup
