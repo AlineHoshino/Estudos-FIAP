@@ -16,3 +16,10 @@ TAM - total addressable market - merado endereçável totl - demanda total sem c
 SAM - Serviceable available market - quase a realidade - mundo com competidores
 SOM- Serviceable obtainable market - também leva em conta limitação de time, número mais realista
 Aprender - através da ideia construir - produto - medir através de dados
+Fail fast - errar rápido 
+Ecossistema bem mapeado - visão da relação de negócios entre os nós;
+Pesquisa exploratória - encontrar demandas nao atendidas
+Problema - público - solução
+Needs first
+Não dê sugestões
+Matriz CSD - ceretza, suposição e dúvidas
