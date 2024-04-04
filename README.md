@@ -109,5 +109,6 @@ Trilha Android
 - [x] Cap03 - O banco respeitando decisões
 - [x] Cap04 - Malabarismo dentro do Oracle
 - [x] Cap05 - Objetos no Oracle!
+- [x] Cap06 - Tratando exceções, desta vez no BD
 - [x] Cap11 - Identificando oportunidades
 - [x] Cap12 - Validating your startup
