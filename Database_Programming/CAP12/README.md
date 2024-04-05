@@ -22,4 +22,4 @@ Pesquisa exploratória - encontrar demandas nao atendidas
 Problema - público - solução
 Needs first
 Não dê sugestões
-Matriz CSD - ceretza, suposição e dúvidas
+Matriz CSD - certeza, suposição e dúvidas
