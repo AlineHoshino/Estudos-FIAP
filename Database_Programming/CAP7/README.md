@@ -16,3 +16,14 @@ Na sequência para utilizar a procedure devo usar o execute.
 
 Para exibir erros de compilação -use i SHOW ERRORS
 
+Temos possibilidade de nomear os parametros:
+Exemplo: 
+BEGIN
+ sp_inculir_dept (p_cod => 60, p_nome => 'Doze', p_loc => 'RJ');
+END;
+/
+
+Os parametros podem ser passados por posição, identificação e combinado.
+Posição - na ordem que é listado
+por identificação - p_cod => 60
+combinado - parametros de posição devem ocupar o primeiro lugar da lista.
