@@ -112,5 +112,7 @@ Trilha Android
 - [x] Cap06 - Tratando exceções, desta vez no BD
 - [x] Cap07 - Muito a processar antes de persistir!
 - [x] Cap08 - Crie suas próprias funções no Oracle
+- [x] Cap09 - Empacotando os elementos do banco 
+- [x] Cap10 - Gatilhos mágicos
 - [x] Cap11 - Identificando oportunidades
 - [x] Cap12 - Validating your startup
