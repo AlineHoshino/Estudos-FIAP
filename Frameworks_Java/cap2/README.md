@@ -50,3 +50,17 @@ A classe Contato deve ter uma tabela correspondente no banco
 @Entity
 @Table(name="tbl_contato") - manter a nomenclatura adequada no banco de dados
  @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "tbl_contatos_seq")
+
+
+ Entity Manager vai fazer a gestão do nosso banco de dados vai ser responsável pelo CRUD.
+ Factory se conecta com o banco, e agora vou criar o objeto que faz o CRUD - que é o manager.
+
+
+         em.getTransaction().begin();
+        em.persist(contato);
+        em.getTransaction().commit();
+
+
+Comecei a transação e deu certo eu commito.
+
+ <property name="hibernate.hbm2ddl.auto" value="update"/> - vai fazer a tabela no banco 
