@@ -63,4 +63,12 @@ A classe Contato deve ter uma tabela correspondente no banco
 
 Comecei a transação e deu certo eu commito.
 
- <property name="hibernate.hbm2ddl.auto" value="update"/> - vai fazer a tabela no banco 
+ <property name="hibernate.hbm2ddl.auto" value="update"/> - vai fazer a tabela no banco
+
+ DAO - data acess object
+
+ Uma estrutura para criar as classes que vão ser responsáveis por fazer a persistência no banco de dados
+
+ Classe define o que é o bjeto, o DAO vai ter os métodos que vão persistir nesse objeto do banco de dados.
+
+ Separar as responsabilidades, uma classe que sabe como persistir esse objeto no banco de dados
