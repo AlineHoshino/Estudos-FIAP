@@ -72,3 +72,33 @@ Comecei a transação e deu certo eu commito.
  Classe define o que é o bjeto, o DAO vai ter os métodos que vão persistir nesse objeto do banco de dados.
 
  Separar as responsabilidades, uma classe que sabe como persistir esse objeto no banco de dados
+
+Propriedade em letra maiúsucla é uma consttante e não uma variável
+
+package br.com.fiap.contatos.dao;
+
+import br.com.fiap.contatos.model.Contato;
+import jakarta.persistence.EntityManager;
+
+public class ContatoDao {
+
+    private EntityManager em;
+
+    public ContatoDao(EntityManager em){
+        this.em = em;
+    }
+
+    public void salvar(Contato contato){
+        em.persist(contato);
+    }
+
+    public void atualizar(Contato contato){
+        em.merge(contato);
+    }
+
+
+merge rsponsável pela atualização
+
+No merge roda o select automaticamente.
+
+Na exclusão tem de recuperar o objeto, quando devolver o registro, daí ele converte num objeto do tipo contato.
