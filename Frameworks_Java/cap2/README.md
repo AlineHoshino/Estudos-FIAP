@@ -102,3 +102,17 @@ merge rsponsável pela atualização
 No merge roda o select automaticamente.
 
 Na exclusão tem de recuperar o objeto, quando devolver o registro, daí ele converte num objeto do tipo contato.
+
+
+Consulta de dados com DAO
+
+    public void consultarContatoPorId(Long id){
+        Contato contatoConsulta = em.find(Contato.class, id);
+
+        if(contatoConsulta == null){
+            System.out.println("Contato não encontrado");
+        }else{
+            System.out.println(contatoConsulta.toString());
+        }
+
+    }
