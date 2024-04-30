@@ -145,3 +145,37 @@ Como não estou alterando nada no banco não precisa de transação:
                 .getResultList();
     }
 
+E se agente quisesse dizer qual o tipo de contato exemplo se é familia, amigo. Poderia adicionar mais um atributo
+Vamos criar outra entidade e relacionar essas tabelas.
+
+    @OneToMany
+    private TipoContato tipoContato;
+
+
+        public static void cadastrar(EntityManager em){
+
+        TipoContato tipoContato = new TipoContato();
+        tipoContato.setId(1L);
+        tipoContato.setTipo("familia");
+
+        TipoContatoDao tipoContatoDao = new TipoContatoDao(em);
+
+        em.getTransaction().begin();
+//        tipoContatoDao.salvar(tipoContato);
+
+        Contato contato = new Contato();
+        contato.setNome("Pedro da Silva");
+        contato.setEmail("pedro@email.com");
+        contato.setDataNascimento(LocalDate.of(1997,5,13));
+        contato.setTipoContato(tipoContato);
+
+        // Criar uma instancia do DAO
+
+        ContatoDao  contatoDao = new ContatoDao(em);
+
+        contatoDao.salvar(contato);
+        em.getTransaction().commit();
+
+    }
+
+Como já salvei o tipo contato família, não precisa criar de novo por isso está comentado
