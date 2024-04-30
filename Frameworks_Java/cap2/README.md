@@ -116,3 +116,32 @@ Consulta de dados com DAO
         }
 
     }
+
+
+Numa loja te pedem o seu cpf e voce não lembra , entao voce passa sue nome e te acham 
+Java persistence query language - JPQL
+
+Como não estou alterando nada no banco não precisa de transação:
+    public static void listarTodosOsContatos(EntityManager em){
+
+        // Criar uma instancia do DAO
+
+        ContatoDao  contatoDao = new ContatoDao(em);
+
+        contatoDao.listarTodosOsContatos();
+
+    }
+
+    public List<Contato> listarTodosOsContatos(){
+
+        String consulta = "SELECT c FROM Contato c ORDER BY nome ASC";
+        return em.createQuery(consulta).getResultList();
+    }
+
+    public List<Contato> listarContatosPorEmail(String emailProcurado){
+        String consulta = "SELECT c FROM Contato c WHERE email = :email";
+        return em.createQuery(consulta, Contato.class)
+                .setParameter("email", emailProcurado)
+                .getResultList();
+    }
+
