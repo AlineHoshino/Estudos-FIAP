@@ -179,3 +179,12 @@ Vamos criar outra entidade e relacionar essas tabelas.
     }
 
 Como já salvei o tipo contato família, não precisa criar de novo por isso está comentado
+
+No unidirecional, apenas um lado conhece. 
+
+Mapeamento bidirecioanal
+
+Lado A precisa saber e o lado B também 
+
+    @OneToMany(mappedBy = "tipoContato")
+    private List<Contato> contatos;
