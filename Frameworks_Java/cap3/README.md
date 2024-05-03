@@ -148,3 +148,51 @@ public class ContatoService {
         }
     }
 }
+
+
+
+@RestController
+@RequestMapping("/api")
+public class ContatoController {
+
+    @Autowired
+    private ContatoService service;
+
+    @PostMapping("/contatos")
+    @ResponseStatus(HttpStatus.CREATED)
+    public Contato gravar(@RequestBody Contato contato){
+        return service.gravar(contato);
+    }
+
+    @ResponseStatus(HttpStatus.OK)
+    @GetMapping("/contatos")
+    public List<Contato> listarTodosOsContatos(){
+        return service.listarTodosOsContatos();
+    }
+
+
+    @DeleteMapping("contatos/{id}")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    public void excluir(@PathVariable Long id){
+         service.excluir(id);
+    }
+
+    @PutMapping("/contatos")
+    @ResponseStatus(HttpStatus.OK)
+    public Contato atualizar(Contato contato){
+        return service.atualizar(contato);
+    }
+
+    @ResponseStatus(HttpStatus.OK)
+    @GetMapping("/contatos/{nome}")
+    public Contato buscarContatoPleoNome(@PathVariable String nome){
+        return service.buscarPeloNome(nome);
+    }
+
+    @ResponseStatus(HttpStatus.OK)
+    @GetMapping("/contatos/{dataInicial}/{dataFinal}")
+    public List<Contato> mostrarAniversariantes(@PathVariable LocalDate dataiInicial,@PathVariable LocalDate dataFinal){
+        return service.mostrarAniversariantes(dataiInicial, dataFinal);
+    }
+
+}
