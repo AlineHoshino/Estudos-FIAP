@@ -35,3 +35,116 @@ This application has no explicit mapping for /error, so you are seeing this as a
 
 Wed May 01 17:43:37 BRT 2024
 There was an unexpected error (type=Not Found, status=404).
+
+Model view e controller - controller reebe a requisição e passa
+Tem de fazer anotação @RestController
+@RequestMapping("/api") - mapear a url 
+
+@RestController
+@RequestMapping("/api")
+public class HelloController {
+
+    @GetMapping("/hello")
+    public String hello(){
+        return "Hello World";
+    }
+
+    @GetMapping("/ola")
+    public String ola(){
+        return "Olá, mundo!";
+    }
+}
+
+
+GetMapping dizendo que a requisição é um get
+
+JDBC - biblioteca que faz a interação com o banco de dados
+Pensando nisso criaram o JPA
+
+Equals and hashcode - distibguir a instancia de um objeto de outro objeto
+
+Dependencia validation - ver se o clinete esta enviando os dados corretos para nosso endpoint
+flyway- versão de controle de banco
+![spring](img/spring.png)
+Clicar em explore para atualizar o pom
+
+Repositório - classe que é responsável por consultar os dados
+
+public interface ContatoRepository extends JpaRepository <Contato, Long>{
+    
+    public Contato findByNome(String nome);
+    
+    public List<Contato> findByDataNascimentoBetween(LocalDate dataInicial, LocalDate dataFinal);
+}
+
+
+Tem uma documentação com as queries ja prontas, por padrão usa FindBy nome do atributo
+
+Controller só sabe receber a requisição e despachar para outro lidar com ela, então não é legal deixar ele consultar 
+Por isso, o controller chama o serviço. 
+Fica com uma responsabilidade única
+
+Já mandou o registro, já gravou o id, devolve o objeto completo
+
+    @Autowired - para poder instanciar o objeto 
+
+Como fica o Service:
+package br.com.fiap.contato.service;
+
+import br.com.fiap.contato.model.Contato;
+import br.com.fiap.contato.repository.ContatoRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.time.LocalDate;
+import java.util.List;
+import java.util.Optional;
+
+@Service
+public class ContatoService {
+
+    @Autowired
+    private ContatoRepository contatoRepository;
+
+    public Contato gravar(Contato contato){
+        return contatoRepository.save(contato);
+    }
+
+    public Contato buscarPorId(Long id){
+
+        Optional<Contato> contatoOptional = contatoRepository.findById(id);
+        if(contatoOptional.isPresent()){
+            return contatoOptional.get();
+        } else{
+            throw new RuntimeException("Contato não encontrado!");
+        }
+    }
+
+    public List<Contato> listarTodosOsContatos(){
+        return contatoRepository.findAll();
+    }
+
+    public void excluir(Long id){
+        Optional<Contato> contatoOptional = contatoRepository.findById(id);
+
+        if(contatoOptional.isPresent()){
+            contatoRepository.delete(contatoOptional.get());
+        }else{
+            throw new RuntimeException(("Contato não encontrado!"));
+        }
+    }
+
+    public List<Contato> mostrarAniversariantes(LocalDate dataIncial, LocalDate dataFinal){
+        return contatoRepository.findByDataNascimentoBetween(dataIncial, dataFinal);
+    }
+
+    public Contato atualizar(Contato contato){
+        Optional<Contato> contatoOptional = contatoRepository.findById(contato.getId());
+
+        if(contatoOptional.isPresent()){
+            return contatoRepository.save(contato);
+        }else{
+            throw new RuntimeException(("Contato não encontrado!"));
+        }
+    }
+}
