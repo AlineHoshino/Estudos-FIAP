@@ -116,3 +116,16 @@ Trilha Android
 - [x] Cap10 - Gatilhos mágicos
 - [x] Cap11 - Identificando oportunidades
 - [x] Cap12 - Validating your startup
+
+## Frameworks Java
+
+- [x] Cap01 - Mergulhando no Java
+- [x] Cap02 - A persistência de dados
+- [x] Cap03 - O REST com Spring Boot
+- [x] Cap04 - O Spring Data JPA
+- [x] Cap05 - 
+- [x] Cap06 - 
+- [x] Cap07 - 
+- [x] Cap08 - 
+- [x] Cap09 - Startup: Modelo de negócios
+- [x] Cap10 - 
