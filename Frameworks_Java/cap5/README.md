@@ -116,3 +116,34 @@ public class SecurityConfig {
 get pode , post não pode
 
 Criação d controlador de autenticação
+
+endpoint que precisa se autenticar:
+
+@RestController
+@RequestMapping("/auth")
+public class AuthController {
+    
+    @Autowired
+    private AuthenticationManager authenticationManager;
+    
+    @PostMapping("/login")
+    public ResponseEntity login(@RequestBody @Valid UsuarioCadastroDto usuarioCadastroDto){
+        UsernamePasswordAuthenticationToken usernamePassword = 
+                new UsernamePasswordAuthenticationToken(
+                        usuarioCadastroDto.email(), 
+                        usuarioCadastroDto.senha());
+        
+        Authentication auth = authenticationManager.authenticate(usernamePassword);
+        
+        return ResponseEntity.ok().build();
+    }
+    
+}
+
+
+precisa ter o authenticationManager-     @Bean
+    public AuthenticationManager authenticationManager(AuthenticationConfiguration authenticationConfiguration) throws Exception{
+        
+        return authenticationConfiguration.getAuthenticationManager();
+    }
+
