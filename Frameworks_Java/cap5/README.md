@@ -147,3 +147,30 @@ precisa ter o authenticationManager-     @Bean
         return authenticationConfiguration.getAuthenticationManager();
     }
 
+
+Criação do registro do usuário, quando vai gravar a senha vai gravar de forma criptografada
+
+    @PostMapping("/register")
+    @ResponseStatus(HttpStatus.CREATED)
+    public UsuarioExibicaoDto registrar(@RequestBody @Valid UsuarioCadastroDto usuarioCadastroDto){
+           UsuarioExibicaoDto usuarioSalvo = null;
+           usuarioSalvo = service.gravar(usuarioCadastroDto);
+           return usuarioSalvo;
+    }
+
+
+public class UsuarioService {
+
+    @Autowired
+    private UsuarioRepository usuarioRepository;
+
+    public UsuarioExibicaoDto gravar(UsuarioCadastroDto usuarioCadastroDto){
+
+        String senhaCriptografada = new BCryptPasswordEncoder().encode(usuarioCadastroDto.senha());
+
+        Usuario usuario = new Usuario();
+        BeanUtils.copyProperties(usuarioCadastroDto, usuario);
+        usuario.setSenha(senhaCriptografada);
+        return new UsuarioExibicaoDto(usuarioRepository.save(usuario));
+    }
+
