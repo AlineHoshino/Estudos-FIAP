@@ -235,3 +235,19 @@ public Instant gerarDataDeExpiracao() {
                         UsernamePasswordAuthenticationFilter.class
                 )
                 .build();
+
+
+
+    @PostMapping("/login")
+    public ResponseEntity login(@RequestBody @Valid LoginDto loginDto){
+        UsernamePasswordAuthenticationToken usernamePassword =
+                new UsernamePasswordAuthenticationToken(
+                        loginDto.email(),
+                        loginDto.senha());
+
+        Authentication auth = authenticationManager.authenticate(usernamePassword);
+
+        String token = tokenservice.gerarToken((Usuario) auth.getPrincipal());
+
+        return ResponseEntity.ok(new TokenDto(token));
+    }
