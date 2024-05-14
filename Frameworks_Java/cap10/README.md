@@ -22,6 +22,6 @@ Clientes - se é pf, se tem mais de um cliente
 se tiver 3 clienets 3 post-it de cores diferentes
 
 
-![Modelo_google](img/uber_proposta.png)
+![Modelo_google](img/modelo_google.png)
 
 ![Modelo_nespresso](img/nespresso_modelo.png)
