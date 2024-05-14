@@ -14,7 +14,7 @@ Canvas proposta de valor - Cliente e proposta de valor
 
 Solução para cada coisa que o clinete levantou 
 
-![Proposta] (img/uber_proposta.png)
+![Proposta](img/uber_proposta.png)
 
 
 Canvas modelo de negócio
