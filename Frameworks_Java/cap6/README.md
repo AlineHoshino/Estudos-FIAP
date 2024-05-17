@@ -39,7 +39,8 @@ ntrar em cd htdocs, depois nano.index.html para alterar o arquivo html
 
 Dockerização de uma aplicação:
 
-\Precisa transofrmar em um pacote jar e depois vamos criar o dockerfile
+\Precisa transofrmar em um pacote jar: mvn install 
+ e depois vamos criar o dockerfile
 
 FROM eclipse-temurim:21-alpine
 VOLUME /tmp
