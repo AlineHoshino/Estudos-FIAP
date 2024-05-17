@@ -8,3 +8,5 @@ comando docker login
 docker push alinehoshino/contatos:v1
 
 docker logout
+
+A Azure vai criar um link vamos usar esse link - contatos-fiap-teste.azurewebsites.net/api/contatos
