@@ -40,6 +40,7 @@ ntrar em cd htdocs, depois nano.index.html para alterar o arquivo html
 Dockerização de uma aplicação:
 
 \Precisa transofrmar em um pacote jar: mvn install 
+Chamar notepad Dockerfile
  e depois vamos criar o dockerfile
 
 FROM eclipse-temurim:21-alpine
@@ -52,6 +53,7 @@ ENTRYPOINT ["java","-jar", "/app.jar"]
 
 ADD APP.JAR SERÁ O NOME DO NOSSO APLICATIVO 
 entrypoint comando para executar a aplicação
-
+Construindo a imagem:
+ docker build -t coletas:spring-docker2 .
 
 docker container run -d -p 8080:8080 --name meu-container contatos:spring-docker
