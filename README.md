@@ -123,9 +123,20 @@ Trilha Android
 - [x] Cap02 - A persistência de dados
 - [x] Cap03 - O REST com Spring Boot
 - [x] Cap04 - O Spring Data JPA
+- [x] Cap05 - O spring security
+- [x] Cap06 - Nossa aplicação no container
+- [x] Cap07 - Deploy da aplicação em cloud
+- [x] Cap08 - Microsserviços com Spring
+- [x] Cap09 - Startup: Modelo de negócios
+- [x] Cap10 - Startup: Exploring the Canvas
+
+## Frameworks.NET
+
+- [x] Cap01 - O mundo .NET
+- [x] Cap02 - 
+- [x] Cap03 - 
+- [x] Cap04 - 
 - [x] Cap05 - 
 - [x] Cap06 - 
 - [x] Cap07 - 
-- [x] Cap08 - 
-- [x] Cap09 - Startup: Modelo de negócios
-- [x] Cap10 - 
+- [x] Cap08 - Prototipação
