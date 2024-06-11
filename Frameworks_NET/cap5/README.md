@@ -62,3 +62,9 @@ namespace Fiap.Web.Alunos.Data
         }
     }
 }
+
+
+Add-Migration AddRepresentanteAndClientes - cria a migração
+Update-Database - aplica ao banco de dados
+
+Manipulação de dados - 06:45
