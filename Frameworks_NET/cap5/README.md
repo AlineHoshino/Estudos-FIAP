@@ -67,4 +67,116 @@ namespace Fiap.Web.Alunos.Data
 Add-Migration AddRepresentanteAndClientes - cria a migração
 Update-Database - aplica ao banco de dados
 
-Manipulação de dados - 06:45
+
+using Fiap.Web.Alunos.Data;
+using Fiap.Web.Alunos.Models;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
+namespace Fiap.Web.Alunos.Controllers
+{
+    public class ClienteController : Controller
+    {
+
+        private readonly DataBaseContext _databaseContext;
+        public ClienteController(DataBaseContext databaseContext)
+        {
+
+            _databaseContext = databaseContext;
+
+        }
+        public IActionResult Index()
+        {
+            var clientes = _databaseContext.Clientes
+                .Include(c=> c.Representante).ToList();
+            // Evitando valores null 
+            if (clientes == null)
+            {
+                clientes = new List<ClienteModel>();
+            }
+            return View(clientes);
+        }
+
+        [HttpGet]
+
+        public IActionResult Create() {
+            var selectListRepresentantes = new SelectList(_databaseContext.Representnates.ToList(),
+                                                            nameof(RepresentanteModel.RepresentanteId),
+                                                            nameof(RepresentanteModel.NomeRepresentante));
+            ViewBag.Representantes = selectListRepresentantes;
+            return View(new ClienteModel());
+        }
+
+
+        [HttpPost]
+        public IActionResult Create(ClienteModel clienteModel)
+        {
+            _databaseContext.Clientes.Add(clienteModel);
+            _databaseContext.SaveChanges();
+
+            TempData["mensagemSucesso"] = $"O cliente {clienteModel.Nome} foi adicionado";
+
+            return RedirectToAction(nameof(Index));
+        }
+
+        [HttpGet]
+        public IActionResult Edit(int id) { 
+            var selectListRepresentantes = new SelectList(_databaseContext.Representnates.ToList(),
+                                                            nameof(RepresentanteModel.RepresentanteId),
+                                                            nameof(RepresentanteModel.NomeRepresentante));
+            ViewBag.Representantes = selectListRepresentantes;
+
+            var clienteConsultado = _databaseContext.Clientes.Find(id);
+
+            return View(clienteConsultado);
+
+        }
+
+
+
+        [HttpPost]
+
+        public IActionResult Edit(ClienteModel clienteModel)
+        {
+            _databaseContext.Clientes.Update(clienteModel);
+            _databaseContext.SaveChanges();
+            return RedirectToAction(nameof(Index));
+        }
+
+
+        [HttpGet]
+
+        public IActionResult Detail(int id) {
+            var selectListRepresentantes = new SelectList(_databaseContext.Representnates.ToList(),
+                                                    nameof(RepresentanteModel.RepresentanteId),
+                                                    nameof(RepresentanteModel.NomeRepresentante));
+            ViewBag.Representantes = selectListRepresentantes;
+
+            var clienteConsultado = _databaseContext.Clientes.Find(id);
+
+            return View(clienteConsultado);
+
+        }
+        // Anotação de uso do Verb HTTP Get
+        [HttpGet]
+        public IActionResult Delete(int id)
+        {
+            // Simulando a busca no banco de dados 
+            var clienteConsultado = _databaseContext.Clientes.Find(id);
+
+            if (clienteConsultado != null)
+            {
+                _databaseContext.Clientes.Remove(clienteConsultado);      
+                _databaseContext.SaveChanges();
+                TempData["mensagemSucesso"] = $"Os dados do cliente {clienteConsultado.Nome} foram removidos com sucesso";
+            }
+            else
+            {
+                TempData["mensagemSucesso"] = $"OPS !!! Cliente inexistente.";
+            }
+            return RedirectToAction(nameof(Index));
+        }
+    }
+}
+
+
