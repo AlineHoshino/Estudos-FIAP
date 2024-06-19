@@ -61,3 +61,27 @@ Moq cria objetos mocados
 
 AutoMapper - Converte objetos
 
+
+#region AutoMapper
+
+// Configuração do AutoMapper
+var mapperConfig = new AutoMapper.MapperConfiguration(c => {
+    // Permite que coleções nulas sejam mapeadas
+    c.AllowNullCollections = true;
+    // Permite que valores de destino nulos sejam mapeados
+    c.AllowNullDestinationValues = true;
+
+    // Define o mapeamento de ClienteModel para ClienteCreateViewModel
+    c.CreateMap<ClienteModel, ClienteCreateViewModel>();
+    // Define o mapeamento reverso de ClienteCreateViewModel para ClienteModel
+    c.CreateMap<ClienteCreateViewModel, ClienteModel>();
+});
+
+// Cria o mapper com base na configuração definida
+IMapper mapper = mapperConfig.CreateMapper();
+
+// Registra o IMapper como um serviço singleton no container de DI do ASP.NET Core
+builder.Services.AddSingleton(mapper);
+
+#endregion
+
