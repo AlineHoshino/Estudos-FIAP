@@ -82,3 +82,103 @@ IMapper mapper = mapperConfig.CreateMapper();
 builder.Services.AddSingleton(mapper);
 #endregion...
 
+Controller:
+
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using Fiap.Api.Teste.Services;
+using AutoMapper;
+using Fiap.Api.Teste.ViewModel;
+using Fiap.Api.Teste.Models;
+
+namespace Fiap.Api.Teste.Controllers
+{
+    [Route("api/[controller]")]
+    [ApiController]
+    public class RepresentanteController : ControllerBase
+    {
+        private readonly IRepresentanteService _representanteservice;
+        private readonly IMapper _mapper;
+
+        public RepresentanteController(IRepresentanteService representanteservice, IMapper mapper)
+        {
+            _representanteservice = representanteservice;
+            _mapper = mapper;
+        }
+
+        [HttpGet]
+        public ActionResult<IEnumerable<RepresentanteViewModel>> Get()
+        {
+            var lista = _representanteservice.ListarRepresentantes();
+            var viewModelList = _mapper.Map<IEnumerable<RepresentanteViewModel>>(lista);
+
+            if (viewModelList == null)
+            {
+                return NoContent();
+            }
+            else
+            {
+                return Ok(viewModelList);
+            }
+
+
+        }
+
+        [HttpGet("{id}")]
+        public ActionResult<RepresentanteViewModel> Get([FromRoute] int id)
+        {
+            var model = _representanteservice.ObterRepresentantePorId(id);
+
+
+            if (model == null)
+            {
+                return NotFound();
+
+            }
+            else
+            {
+                var viewModel = _mapper.Map<RepresentanteViewModel>(model);
+                return Ok(viewModel);
+            }
+
+
+        }
+
+        [HttpPost]
+        public ActionResult Post([FromBody] RepresentanteViewModel viewModel)
+        {
+            var model = _mapper.Map<RepresentanteModel>(viewModel);
+            _representanteservice.CriarRepresentante(model);
+            return CreatedAtAction(nameof(Get), new { id = model.RepresentanteId }, model);
+
+        }
+
+        [HttpPut("{id}")]
+        public ActionResult Put([FromRoute]int id,[FromBody] RepresentanteViewModel viewModel)
+        {
+            if (viewModel.RepresentanteId == id)
+            {
+                var model = _mapper.Map<RepresentanteModel>(viewModel);
+                _representanteservice.AtualizarRepresentante(model);
+                return NoContent();
+            }
+            else 
+            {
+
+                return BadRequest();
+            }
+           
+
+        }
+
+        [HttpDelete("{id}")]
+        public ActionResult Delete([FromRoute] int id)
+        {
+            _representanteservice.DeletarRepresentante(id);
+
+            return NoContent();
+
+
+        }
+    }
+}
