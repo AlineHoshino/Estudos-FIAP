@@ -210,3 +210,45 @@ Atualizar controller
 
         [HttpDelete("{id}")]
         [Authorize(Roles = "gerente")]
+
+
+Paginação
+
+public IEnumerable<ClienteModel> GetAll(int page, int size)
+{
+    return _context.Clientes.Include(c => c.Representante)
+                    .Skip( (page - 1) * page  )
+                    .Take( size )
+                    .AsNoTracking()
+                    .ToList();  
+}
+public IEnumerable<ClienteModel> GetAllReference(int lastReference, int size)
+{
+    var clientes = _context.Clientes.Include(_ => _.Representante)
+                        .Where(c => c.ClienteId > lastReference)
+                        .OrderBy( c => c.ClienteId) 
+                        .Take(size)
+                        .AsNoTracking()
+                        .ToList();
+    return clientes;
+}
+
+Fazer ViewModel de paginação
+
+
+
+namespace Fiap.Api.Teste.ViewModel
+{
+    public class RepresentantePaginacaoViewModel
+    {
+        public IEnumerable<RepresentanteViewModel> Representantes { get; set; }
+        public int CurrentPage { get; set; }
+        public int PageSize { get; set; }
+        public bool HasPreviousPage => CurrentPage > 1;
+        public bool HasNextPage => Representantes.Count() == PageSize;
+        public string PreviousPageUrl => HasPreviousPage ? $"/representante?pagina={CurrentPage - 1};tamanho={PageSize}" : "";
+        public string NextPageUrl => HasNextPage ? $"/representante?pagina={CurrentPage + 1};tamanho={PageSize}" : "";
+    }
+}
+
+Atualizar Service, interface, repository e interface do repository 
