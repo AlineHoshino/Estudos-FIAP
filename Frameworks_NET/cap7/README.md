@@ -20,7 +20,7 @@ Naõ esquecer de mexer no appsettings.json para por a senha
 
 Fazer as migrações
 
-
+Ferramentas , gerenciador de pacoteNuget, manager console
 Add-Migration AddRepresentanteAndClientes - cria a migração
 Update-Database - aplica ao banco de dados
 
@@ -182,3 +182,31 @@ namespace Fiap.Api.Teste.Controllers
         }
     }
 }
+
+
+Segurança - baixar o pacote jwt bearer
+colocar no Program.cs
+#region Autenticação
+builder.Services.AddAuthentication(options =>
+{
+    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+})
+    .AddJwtBearer(options =>
+    {
+        options.TokenValidationParameters = new TokenValidationParameters
+        {
+            ValidateIssuerSigningKey = true,
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("f+ujXAKHk00L5jlMXo2XhAWawsOoihNP1OiAM25lLSO57+X7uBMQgwPju6yzyePi")),
+            ValidateIssuer = false,
+            ValidateAudience = false
+        };
+    });
+#endregion
+
+
+Criar um UserModel, Uma interface de autenticação, um service de autenticação, um controller
+Atualizar controller
+
+        [HttpDelete("{id}")]
+        [Authorize(Roles = "gerente")]
