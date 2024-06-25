@@ -44,7 +44,7 @@ builder.Services.AddScoped<IRepresentanteService, RepresentanteService>();
 #endregion
 
 Depois criar as viewModels e adicionar no program cs
-
+Não esquecer de instalar o AutoMapper
 #region IMPORTAÇÃO REFERENTE AO BANCO DE DADOS
 using AutoMapper;
 using Fiap.Web.Alunos.Data.Contexts;
