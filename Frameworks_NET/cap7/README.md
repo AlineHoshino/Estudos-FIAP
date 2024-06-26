@@ -82,6 +82,7 @@ IMapper mapper = mapperConfig.CreateMapper();
 builder.Services.AddSingleton(mapper);
 #endregion...
 
+Tem de ir em adiconar controlaador e escolher a aopção API 
 Controller:
 
 using Microsoft.AspNetCore.Http;
