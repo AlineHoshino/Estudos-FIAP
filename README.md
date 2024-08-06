@@ -133,10 +133,14 @@ Trilha Android
 ## Frameworks.NET
 
 - [x] Cap01 - O mundo .NET
-- [x] Cap02 - 
-- [x] Cap03 - 
-- [x] Cap04 - 
-- [x] Cap05 - 
-- [x] Cap06 - 
-- [x] Cap07 - 
+- [x] Cap02 - Preparando o ambiente.NET
+- [x] Cap03 - Programando em C#
+- [x] Cap04 - Desenvolvimento web com ASP.NET
+- [x] Cap05 - Persistência de dados
+- [x] Cap06 - Padrões e práticas avançadas
+- [x] Cap07 - APIs e Integração de sistemas
 - [x] Cap08 - Prototipação
+
+## Data Universe
+
+- [x] Cap01 - A evolução do universo de dados

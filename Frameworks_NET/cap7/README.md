@@ -253,3 +253,6 @@ namespace Fiap.Api.Teste.ViewModel
 }
 
 Atualizar Service, interface, repository e interface do repository 
+
+
+Para criação de testes nao esquecer de em dependences colocar o projeto que segue a dependecia
