@@ -144,3 +144,4 @@ Trilha Android
 ## Data Universe
 
 - [x] Cap01 - A evolução do universo de dados
+- [x] Cap02 - NOT ONLY SQL
