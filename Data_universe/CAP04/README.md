@@ -31,6 +31,8 @@ Departamento:{
 
 documentos aninhados
 
+- Buscando documentos:
+
 db.Coleção.find(Consulta, Projeção, Opções)
 
 db.emp.find({Valor:{$lt: 156.55}});
@@ -44,6 +46,7 @@ db.emp.find({Valor:{$lt: 156.55}});
   Valor: 133.29
 }
 
+
 Algum possível valor dentro de um atributo podemos utilizar o operador in 
 
 db.emp.find().sort({Nome:1}); - ordenando por nome
@@ -52,3 +55,18 @@ ordem descrescente db.emp.find().sort({Cargo:1, Idade:-1});
 
 db.emp.find({Idade:20}, {_id:1, Idade:1, Cargo:1});    - depois da , é a projeção ou seja, só quero que traga id, idade e cargo.
 
+
+- Atualizando documentos:
+
+db.emp.updateOne({Autor:"Silva"}, {$set:{Valor: 150}});
+
+db.emp.updateOne({Professor:"André"}, {$rename:{"Professor": "Autor"}}); - renomeando um atributo de Professor para autor
+
+db.emp.updateOne({Professor:"Silva"}, {$unset:{Cod:""}}); - remover o aributo cod
+
+- Deletando documentos:
+
+db.emp.deleteOne({Professor:"Rodrigo"});
+
+Removendo a collection:
+db.emp2.drop();
