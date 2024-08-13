@@ -145,3 +145,10 @@ Trilha Android
 
 - [x] Cap01 - A evolução do universo de dados
 - [x] Cap02 - NOT ONLY SQL
+- [x] Cap03 - Conhecendo o MongoDB
+- [x] Cap04 - MongoDb na prática
+
+
+
+
+- [x] Cap09 - Startup: Validando a solução
