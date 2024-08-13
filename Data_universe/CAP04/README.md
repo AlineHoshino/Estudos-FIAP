@@ -70,3 +70,22 @@ db.emp.deleteOne({Professor:"Rodrigo"});
 
 Removendo a collection:
 db.emp2.drop();
+
+Agregação:
+
+Usar aggregate recebe um array
+
+db.emp.aggregate([{$match: {Valor:{$gte:150}}}])
+
+db.emp.aggregate([{$project: {_id:0, Nome:1, Autor:1}}]); - semelhante a projeção
+
+
+ não é o atributo id, o id será o atributo que define a granularidade, quando não temos uma granularidade definida, faz a agregação utilizando todos os documentos
+db.emp.aggregate(
+[{$group: {_id:null, ValorMedio: {$avg: '$Valor'}}}])
+
+pipeline = [
+        { $match : { … } },
+        { $project : { … } },
+        { $group : { … } }
+       ]
