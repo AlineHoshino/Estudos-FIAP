@@ -68,6 +68,8 @@ db.emp.updateOne({Professor:"Silva"}, {$unset:{Cod:""}}); - remover o aributo co
 
 db.emp.deleteOne({Professor:"Rodrigo"});
 
+
+
 Removendo a collection:
 db.emp2.drop();
 
@@ -89,3 +91,9 @@ pipeline = [
         { $project : { … } },
         { $group : { … } }
        ]
+
+
+       db.Coletas.find({caminhaoId: "123ABC"}, {_id:0, coletaId:1, dataColeta:1, tipo:1});
+
+$lookup
+Realiza uma união externa esquerda em uma coleção no mesmo banco de dados para filtrar documentos da coleção "unida" para processamento. O estágio $lookup adiciona um novo campo de array a cada documento de entrada. O novo campo de array contém os documentos correspondentes da coleção "unida". O estágio $lookup passa esses documentos remodelados para o próximo estágio.
