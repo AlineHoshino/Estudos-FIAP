@@ -147,8 +147,9 @@ Trilha Android
 - [x] Cap02 - NOT ONLY SQL
 - [x] Cap03 - Conhecendo o MongoDB
 - [x] Cap04 - MongoDb na prática
-
-
+- [x] Cap05 - Big Data
+- [x] Cap06 - Business Intelligence com Tableau
 
 
 - [x] Cap09 - Startup: Validando a solução
+- [x] cap10 - Startup: Viabilidade financeira
