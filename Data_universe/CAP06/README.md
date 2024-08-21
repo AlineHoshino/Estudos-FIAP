@@ -14,9 +14,11 @@ Posso arrastar o vendedor com a comissao e descobrir:
 ![Maior_vendedor](img/vendedor.png)
 Ao lado de valor comissão temos a opção de por em ordem crescente ou decrescente
 ![Tablea_final_vendedor](img/final.png)
-Gráfico de pizza serve para dar respostas curtas
-![Desempenho_loja](img/desempenho_loja.png)
 
+Gráfico de pizza serve para dar respostas curtas.
+
+Abaixo na imagem podemos ver um desempenho das lojas comparando as duas lojas e suas vendas:
+![Desempenho_loja](img/desempenho_loja.png)
 Para criar um story, fazemos o dashboard e depois coloca o dashboard e cria uma legenda contando a história:
 ![Story](img/story.png)
 
