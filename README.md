@@ -152,4 +152,4 @@ Trilha Android
 
 
 - [x] Cap09 - Startup: Validando a solução
-- [x] cap10 - Startup: Viabilidade financeira
+- [x] Cap10 - Startup: Viabilidade financeira

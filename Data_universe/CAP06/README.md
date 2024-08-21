@@ -5,7 +5,7 @@ Tableau separa em dimensão e métrica.
 Dimensão - qualitativa
 Métrica - quantitativa
 
-![Tableau_Icon](img/Tableau_option.png)
+![Tableau_Icon](img/Option.png)
 Na imagem acima se clicar na seta da para criar um novo campo de calculo
 Para saber as expressões clicar na seta, depois disso ao usar a expressao posso arrastar os campos para dentro do parenteses ficando assim:
 ![Calculo](img/calculo.png)
