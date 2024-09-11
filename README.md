@@ -149,7 +149,19 @@ Trilha Android
 - [x] Cap04 - MongoDb na prática
 - [x] Cap05 - Big Data
 - [x] Cap06 - Business Intelligence com Tableau
-
-
+- [x] Cap07 - Cloud computing
+- [x] Cap08 - Arquitetura e aplicações Cloud
 - [x] Cap09 - Startup: Validando a solução
 - [x] Cap10 - Startup: Viabilidade financeira
+
+## DEVOPS
+
+- [] Cap01 - 
+- [] Cap02 - 
+- [] Cap03 - 
+- [] Cap04 - 
+- [] Cap05 - 
+- [] Cap06 - 
+- [] Cap07 - 
+- [] Cap08 - 
+- [] Cap09 - Pitch
