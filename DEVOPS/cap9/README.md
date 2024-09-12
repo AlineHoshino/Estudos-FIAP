@@ -19,3 +19,9 @@ Não termine com é isso.
 Não exagerar nos textos
 Maria é uma estudante que tem um grande desafio.
 3 perfis - o Hipster, o Hacker e o Hustler.
+
+Nesta aula, aprendemos sobre a criação de um pitch eficaz, essencial para empreendedores que buscam investimentos para suas startups. O pitch é uma apresentação breve e convincente que capta a atenção dos investidores. Foram abordados diferentes tipos de pitch, como Tweet Pitch, Elevator Pitch e Investment Pitch, enfatizando que é crucial não apenas explicar o produto, mas também envolver emocionalmente o público.
+
+A neurociência aplicada à comunicação foi discutida, destacando a importância do sistema límbico nas decisões emocionais durante o pitch. Para despertar interesse, sugeriu-se o uso de movimento e contextos relevantes. A estrutura de um pitch de sucesso inclui uma abertura cativante, identificação do problema, descrição do mercado, proposta de valor e apresentação da solução, além do modelo de negócio.
+
+A aula também enfatizou a necessidade de controlar as emoções, ensaiar e estar preparado para imprevistos. Foram apresentadas dicas sobre a elaboração de pitch decks e estratégias para sessões de perguntas e respostas, utilizando exemplos práticos para auxiliar os empreendedores a conquistar investidores e impulsionar seus negócios.
