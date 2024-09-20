@@ -1,0 +1,8 @@
+Uma prática DevOps essencial é a execução de atualizações muito freuqentes, porém pequenas. Isso está muito ligado à metodologia de desenvolvimento ágil, por exemplo, SCRUM E KANBAN.
+Claro! A aula aborda o conceito de DevOps, que é uma cultura que integra as equipes de desenvolvimento e operações, visando melhorar a velocidade de entrega de software e a estabilidade dos sistemas. Ela destaca a diferença entre o número de profissionais nas áreas de desenvolvimento e operações e como essas equipes frequentemente trabalham isoladas, levando a ineficiências.
+
+DevOps promove colaboração contínua e oferece benefícios como maior velocidade de entrega, escalabilidade, confiabilidade e segurança. Para implementar essa cultura, são necessárias práticas como infraestrutura como código, integração e entrega contínua, além do uso de microsserviços.
+
+A aula também menciona a importância de utilizar ferramentas específicas em diferentes etapas do desenvolvimento e destaca o conceito de DevSecOps, que enfatiza a segurança ao longo de todo o processo. Por fim, ressalta que a comunicação e a colaboração são fundamentais para o sucesso do DevOps, criando um ambiente onde todos se sentem responsáveis pela qualidade do software.
+
+A arquitetura de microsserviços representa um conjunto de perquenos serviços que se inyterligam para construir um sistema. Cada serviço posssui um contexto único de negócios , é executado de forma individual e independente e se comunica com outros serviços pro meio de uma inteface leve
