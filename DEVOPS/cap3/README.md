@@ -87,3 +87,17 @@ Desvantagens:
 
 Pode ser complexo configurar, pois envolve replicar o tráfego e garantir que tudo funcione corretamente.
 Requer recursos adicionais, já que você está basicamente executando duas versões da aplicação ao mesmo tempo.
+
+O **Dark Launching** é uma estratégia de implantação que permite lançar uma nova versão de uma aplicação em produção, mas mantendo novos recursos ocultos para os usuários até que estejam prontos para serem utilizados. Isso significa que a nova versão está ativa, porém os recursos não estão visíveis ou acessíveis ao público.
+
+### Vantagens:
+1. **Testes em Ambiente Real**: Permite testar a nova versão em um ambiente real, capturando dados e desempenho sem impactar a experiência do usuário.
+2. **Identificação de Problemas**: Problemas podem ser identificados e corrigidos antes que os usuários tenham acesso aos novos recursos.
+3. **Preparação do Usuário**: Os usuários podem ser gradualmente preparados para as novas funcionalidades, oferecendo tempo para adaptação.
+
+### Desvantagens:
+1. **Complexidade de Implementação**: Pode ser mais complexo gerenciar o lançamento dos recursos e garantir que estejam ocultos até a hora certa.
+2. **Risco de Confusão**: Se não for bem gerenciado, o Dark Launching pode causar confusão entre os usuários se eles descobrirem funcionalidades que não estão habilitadas.
+3. **Monitoramento Requerido**: É necessário um monitoramento constante para garantir que todos os aspectos da nova versão funcionem corretamente antes do lançamento completo.
+
+Essa estratégia é bastante útil para empresas que querem garantir que as novas funcionalidades sejam introduzidas de maneira segura e controlada. Se precisar de mais alguma informação, estou à disposição!
