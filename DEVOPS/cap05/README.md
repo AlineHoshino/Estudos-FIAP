@@ -27,4 +27,23 @@ jobs:
 depois de git add .
 git commit -m 
 git push 
-na hora que der o git push vai pedir a senha do token 
+
+Agora queremos fazer o workflow a partor de uma branch - mudar para branch develop : git switch develop
+name - nome do workflow 
+on:
+  push:
+    branches: 'feature/**'
+
+toda branch que começa com feature/ e tudo que vier depis sera executado, é um filtro de execução nessas branchs 
+
+Ações pré-configuradas
+
+https://github.com/marketplace?type=actions
+
+https://hub.docker.com/
+
+Create repository - criar um token no docker hub, clicar no perfil account settings- create acess token , nome do token e permissões de acesso Read and Write
+faz o login docker login -u alinehoshino, dedpois colcoa a o token 
+depois va no azure
+criarum grupo de recursos, criar o banco de dados, criar um web app - app services- container, linux , origem da imagem docker hub
+depois que criar o app colocar as variaveis de ambiente nas configurações
