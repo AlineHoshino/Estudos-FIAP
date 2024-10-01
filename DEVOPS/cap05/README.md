@@ -47,3 +47,11 @@ faz o login docker login -u alinehoshino, dedpois colcoa a o token
 depois va no azure
 criarum grupo de recursos, criar o banco de dados, criar um web app - app services- container, linux , origem da imagem docker hub
 depois que criar o app colocar as variaveis de ambiente nas configurações
+
+ A aula aborda os conceitos de Integração Contínua (CI) e Entrega Contínua (CD) e como essas práticas melhoram o desenvolvimento de software. A CI permite a confirmação frequente de código em um repositório compartilhado, facilitando a identificação de erros e a colaboração em equipes grandes. Já a CD possibilita lançamentos de software automatizados, melhorando o feedback entre desenvolvedores e usuários.
+
+A aula também explora a aplicação de CI/CD em uma API desenvolvida em Java com Spring Boot, incluindo a gestão de variáveis sensíveis com Docker e o uso do GitHub Actions para automatizar as etapas do desenvolvimento. São apresentados os componentes, fluxos de trabalho e a importância de um Personal Access Token para segurança.
+
+Na parte prática, é ensinado a criar um workflow no GitHub Actions, monitorar sua execução e utilizar ações do Marketplace para otimização do processo. A aula propõe workflows específicos para CI e CD, consolidando um ciclo de desenvolvimento ágil e eficiente, voltado para desenvolvedores que buscam aprimorar suas práticas de entrega de software.
+
+CD- deployment center em deployment na aplicação - manage publish profile
