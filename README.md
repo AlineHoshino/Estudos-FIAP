@@ -156,12 +156,12 @@ Trilha Android
 
 ## DEVOPS
 
-- [] Cap01 - 
-- [] Cap02 - 
-- [] Cap03 - 
-- [] Cap04 - 
-- [] Cap05 - 
-- [] Cap06 - 
-- [] Cap07 - 
+- [x] Cap01 - 
+- [x] Cap02 - 
+- [x] Cap03 - 
+- [x] Cap04 - 
+- [x] Cap05 - 
+- [x] Cap06 - 
+- [x] Cap07 - 
 - [] Cap08 - 
-- [] Cap09 - Pitch
+- [x] Cap09 - Pitch
