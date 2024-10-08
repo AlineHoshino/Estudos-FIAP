@@ -1,0 +1,6 @@
+ A aula aborda o papel do Quality Assurance (QA) no desenvolvimento de software, comparando a metodologia tradicional em cascata com abordagens ágeis, como o Scrum. No modelo cascata, o QA atua principalmente no final do desenvolvimento, o que pode dificultar a adaptação a mudanças e a detecção precoce de falhas. Por outro lado, no Scrum, o QA está presente ao longo de todo o ciclo, possibilitando testes contínuos e uma melhor colaboração com a equipe, resultando em produtos de maior qualidade.
+
+O conteúdo também menciona ferramentas de QA em ambientes ágeis, como TestRail e Selenium, que ajudam na automação e gestão do processo de QA. Além disso, discute inovações futuras, como o uso de inteligência artificial e aprendizado de máquina para aprimorar o QA e a importância de novas estratégias para testar sistemas avançados. A aula enfatiza a evolução do QA, destacando a necessidade de adaptação e a adoção de novas tecnologias.
+Automação de testes - ferramentas como Selenium e Cypress, Selenium ideal para testes de regressão 
+Integração contpinua - ferramentas como Jenkins e CircleCI
+Para garantir a performance e escalabilidade dos aplicativos - Ferramentas como JMeter e LoadRunner
