@@ -9,3 +9,4 @@ Azure Pipelines: que automatiza o ciclo de vida do desenvolvimento, permitindo i
 Azure Test Plans: para garantir a qualidade do software por meio de testes.
 Azure Artifacts: que ajuda na gestão de pacotes e dependências.
 A aula também cobre a personalização do Azure Boards, priorização de backlog e a integração com repositórios de código, proporcionando uma compreensão abrangente de como essas ferramentas melhoram o fluxo de trabalho de desenvolvimento e a colaboração entre equipes.
+

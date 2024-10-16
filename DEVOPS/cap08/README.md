@@ -4,3 +4,5 @@ O conteúdo também menciona ferramentas de QA em ambientes ágeis, como TestRai
 Automação de testes - ferramentas como Selenium e Cypress, Selenium ideal para testes de regressão 
 Integração contpinua - ferramentas como Jenkins e CircleCI
 Para garantir a performance e escalabilidade dos aplicativos - Ferramentas como JMeter e LoadRunner
+Um falso positivo ocorre quando o sistema identifica incorretamete uma condição como verdadeira, quando na realidade, ela é falsa.
+Um falso negativo acontece quando o sistema falha em identificar corretamente uma condiçao qeu é verdaedira

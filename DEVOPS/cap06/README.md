@@ -4,6 +4,7 @@ Um software que um dia já foi inovador chega a aposentadoria, por fatores como:
 - Obsolescência de negócio: modificação do sistema teria de ser profunda para se adaptar a realidade dos negócios.
 - Elevados custos de manutenção
 
+Entre as ferramentas utilizadas paar deploy se destacam: Azure App Services, Google App Engine, AWS Elastic
 Modelos para desenvolver software são - cascata, incremental, evolutivo e espiral.
 Cascata:
 ![Cascata](img/cascata1.png)
@@ -34,6 +35,12 @@ O ciclo de vida do software em uso refere-se à fase de manutenção após o lan
 3. **Maturidade**: O software atinge seu pico de uso. A manutenção se concentra em updates e melhorias de performance, embora mais relevantes surjam.
 
 4. **Declínio**: Com o tempo, o software pode começar a perder relevância ou ser substituído por novas tecnologias, levando a um eventual processo de aposentadoria.
+
+I) Na fase de Introdução, surgem os primeiros interesses pelo software e ainda podem existir problemas com a aplicação e a equipe de desenvolvedores está bastante focada nesse momento imediato à liberação para uso.
+
+II) Na fase de Crescimento, os clientes atuais satisfeitos ajudam a impulsionar o aumento da clientela do sistema. A equipe de desenvolvedores passa a ser liberada para outras atividades.
+
+III) Na fase de Maturidade, a comunidade confia no produto e ele alcança sua quantidade máxima de usuários e licenciamento. No ápice da maturidade, a comercialização do software não cresce mais
 
 A adaptação constante e a manutenção são essenciais para garantir que o software continue a atender às necessidades do negócio e dos usuários ao longo do tempo.
 
