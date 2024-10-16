@@ -156,12 +156,12 @@ Trilha Android
 
 ## DEVOPS
 
-- [x] Cap01 - 
-- [x] Cap02 - 
-- [x] Cap03 - 
-- [x] Cap04 - 
-- [x] Cap05 - 
-- [x] Cap06 - 
-- [x] Cap07 - 
-- [] Cap08 - 
+- [x] Cap01 - Navegando pelo mundo DevOps
+- [x] Cap02 - DevOps e sua importância
+- [x] Cap03 - Deployment na nuvem
+- [x] Cap04 - Azure DevOps e Ferramentas
+- [x] Cap05 - Continuous Integration e Continuous Delivery 
+- [x] Cap06 - Application Lifecycle Management
+- [x] Cap07 - Hora do Compliance
+- [x] Cap08 - Quality Assurance
 - [x] Cap09 - Pitch
