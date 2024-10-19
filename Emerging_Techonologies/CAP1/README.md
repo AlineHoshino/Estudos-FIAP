@@ -13,8 +13,6 @@ Começou de forma tardia a pensar em qualidade, por isso precisa testar.
 Usar os logs para ver se está acontecendo o esperado.
 Precificar é complicado - tem de ver quanto tempo vai gastar. Precisa de dados.
 
-
-
 A aula marca a conclusão de um curso sobre desenvolvimento de software, abordando temas importantes como:
 
 1. **Testes e TDD (Test-Driven Development):**
