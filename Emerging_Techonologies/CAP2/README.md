@@ -108,3 +108,84 @@ public class EntregaModel {
 @Expose(serialize = false)- numero da entrega seja excluído do processo de serialização(obj java é convertido para JSON)
 @Data- gera getters ands setters- implementa os equals and hashcodes.
 
+Criar arquivo CadastroEntregasService- src/teste/java/services
+
+package services;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+import io.restassured.http.ContentType;
+import io.restassured.response.Response;
+import model.EntregaModel;
+import static io.restassured.RestAssured.given;
+public class CadastroEntregasService {
+    final EntregaModel entregaModel = new EntregaModel();
+    public final Gson gson = new GsonBuilder()
+            .excludeFieldsWithoutExposeAnnotation()
+            .create();
+    public Response response;
+    String baseUrl = "http://localhost:8080";
+    public void setFieldsDelivery(String field, String value) {
+        switch (field) {
+            case "numeroPedido" -> entregaModel.setNumeroPedido(Integer.parseInt(value));
+            case "nomeEntregador" -> entregaModel.setNomeEntregador(value);
+            case "statusEntrega" -> entregaModel.setStatusEntrega(value);
+            case "dataEntrega" -> entregaModel.setDataEntrega(value);
+            default -> throw new IllegalStateException("Unexpected feld" + field);
+        }
+    }
+    public void createDelivery(String endPoint) {
+        String url = baseUrl + endPoint;
+        String bodyToSend = gson.toJson(entregaModel);
+        response = given()
+                .contentType(ContentType.JSON)
+                .accept(ContentType.JSON)
+                .body(bodyToSend)
+                .when()
+                .post(url)
+                .then()
+                .extract()
+                .response();
+    }
+}
+
+excludeFieldsWithoutExposeAnnotation() - somente campos com @xpose são incluídos na conversão JSON.
+
+o método setFieldsDelivery - aceita 2 parametros: field e value
+se o valor de field nao corresponder a nenhum caso esperado- lança exceção IllegalStateException
+
+createDelivery - envia uma requisição POST para a Api
+Envia a requisição usadno a biblioteca - Rest Assured
+
+Vamos detalhar cada um dos componentes mencionados: **Given, When, Then** e também **Extract**.
+
+### 1. Given, When, Then
+Esses são os três componentes fundamentais na escrita de cenários de teste usando a linguagem Gherkin em BDD.
+
+- **Given (Dado)**: 
+  - Este componente é usado para estabelecer o contexto inicial. Ele descreve a condição do sistema antes que uma ação seja executada. 
+  - Exemplo: `Dado que o usuário está logado na plataforma`
+
+- **When (Quando)**:
+  - Este componente descreve a ação que o usuário realiza. É o evento que desencadeia uma interação.
+  - Exemplo: `Quando o usuário clica no botão de enviar`
+
+- **Then (Então)**:
+  - Este componente descrê o resultado esperado após a ação. É onde você especifica a verificação que deve ser feita para validar o comportamento do sistema.
+  - Exemplo: `Então a mensagem de confirmação deve ser exibida`
+
+### 2. Extract (Extração)
+**Extract** não é um termo oficial do Gherkin, mas pode se referir à prática de **extração de dados** ou **validação de informações** ao longo do cenário de teste. Isso pode envolver:
+
+- **Extração de valores**: Capturar dados de uma resposta de API ou interface para uso posterior no teste. 
+- **Validação de dados**: Verificar se os dados extraídos correspondem às expectativas. Isso é muitas vezes feito através de validações em resposta de requisições.
+
+Por exemplo:
+Após fazer uma requisição para uma API, você pode:
+```gherkin
+Dado que faço uma requisição para o endpoint de usuários
+Quando receber a resposta
+Então extraio o ID do usuário
+E valido que o ID corresponde ao esperado
+```
+
+Esses componentes ajudam a estruturar o teste de forma clara e compreensível, permitindo que tanto desenvolvedores quanto demais stakeholders entendam o que está sendo testado e qual deve ser o comportamento esperado.
