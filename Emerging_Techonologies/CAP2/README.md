@@ -189,3 +189,45 @@ E valido que o ID corresponde ao esperado
 ```
 
 Esses componentes ajudam a estruturar o teste de forma clara e compreensível, permitindo que tanto desenvolvedores quanto demais stakeholders entendam o que está sendo testado e qual deve ser o comportamento esperado.
+
+Integrar o services com o CadastroEntregasSteps
+
+@Quando envia requisição para o endpoint de cadastro
+@Entao - ver se o status code é o esperado
+
+![Execução testes](img/verde.png)
+
+Se tiver dado certo aparecerá uma tela assim:
+![Sucesso](img/certo.png)
+
+Escrever outros cenáruos ajuda na robustez da aplicação:
+
+Cenário: Cadastro de entrega sem sucesso ao passar o campo statusEntrega inválido
+    Dado que eu tenha os seguintes dados da entrega:
+      | campo          | valor      |
+      | numeroPedido   | 1          |
+      | nomeEntregador | Ana Silva  |
+      | statusEntrega  | EM_ROTA    |
+      | dataEntrega    | 2024-08-22 |
+    Quando eu enviar a requisição para o endpoint "/entregas" de cadastro de entregas
+    Então o status code da resposta deve ser 400
+    E o corpo de resposta de erro da api deve retornar a mensagem "Dados fornecidos estão em formato inválido."
+
+    E - além de verificar o status valida mensagem de erro
+
+    Ao adcionar o E precisamos clicar na lampada e criar o set definition
+
+    Isso criará o passo E
+Cria o step com o parametro agr0- como boa pratica mudar para message
+        @E("o corpo de resposta de erro da api deve retornar a mensagem {string}")
+    public void oCorpoDeRespostaDeErroDaApiDeveRetornarAMensagem(String message) {
+    }
+
+    Criar um Model com a mensagem de erro, voltar no CdastroEntregasSteps e atualiar o codigo 
+
+        @E("o corpo de resposta de erro da api deve retornar a mensagem {string}")
+    public void oCorpoDeRespostaDeErroDaApiDeveRetornarAMensagem(String message) {
+        ErrorMessageModel errorMessageModel = cadastroEntregasService.gson.fromJson(
+                cadastroEntregasService.response.jsonPath().prettify(), ErrorMessageModel.class);
+        Assert.assertEquals(message, errorMessageModel.getMessage());
+    }
