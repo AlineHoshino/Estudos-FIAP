@@ -66,4 +66,45 @@ Funcionalidade: Cadastro de nova entrega
     Então o status code da resposta deve ser 201
 
 Clicar nesse arquivo na lampada na opção steps. Em file-name - CadastroEntregasSteps
-campo file-type
+campo file-type - java
+fole location - src/test/java/steps
+Depois alterar o arquivo CadastroEntregasSteps:
+
+package steps;
+import io.cucumber.java.pt.Dado;
+import io.cucumber.java.pt.Então;
+import io.cucumber.java.pt.Quando;
+public class CadastroEntregasSteps {
+    @Dado("que eu tenha os seguintes dados da entrega:")
+    public void queEuTenhaOsSeguintesDadosDaEntrega() {
+    }
+    @Quando("eu enviar a requisição para o endpoint {string} de cadastro de entregas")
+    public void euEnviarARequisiçãoParaOEndpointDeCadastroDeEntregas(String endPoint) {
+    }
+    @Então("o status code da resposta deve ser {int}")
+    public void oStatusCodeDaRespostaDeveSer(int statusCode) {
+    }
+}
+
+
+Vamos criar a model:
+
+package model;
+import com.google.gson.annotations.Expose;
+import lombok.Data;
+@Data
+public class EntregaModel {
+    @Expose(serialize = false)
+    private int numeroEntrega;
+    @Expose
+    private int numeroPedido;
+    @Expose
+    private String nomeEntregador;
+    @Expose
+    private String statusEntrega;
+    @Expose
+    private String dataEntrega;
+}
+@Expose(serialize = false)- numero da entrega seja excluído do processo de serialização(obj java é convertido para JSON)
+@Data- gera getters ands setters- implementa os equals and hashcodes.
+
