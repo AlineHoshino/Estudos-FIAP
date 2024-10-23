@@ -231,3 +231,5 @@ Cria o step com o parametro agr0- como boa pratica mudar para message
                 cadastroEntregasService.response.jsonPath().prettify(), ErrorMessageModel.class);
         Assert.assertEquals(message, errorMessageModel.getMessage());
     }
+
+    Contexto
