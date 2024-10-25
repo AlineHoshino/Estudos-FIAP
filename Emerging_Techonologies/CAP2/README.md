@@ -232,4 +232,45 @@ Cria o step com o parametro agr0- como boa pratica mudar para message
         Assert.assertEquals(message, errorMessageModel.getMessage());
     }
 
-    Contexto
+    Contexto- condiçõs que precisam estr presentes antes da execução de um cenário.Exemplo deletar - sempre criar uma entrega antes de deletar 
+    Teste de contrato usando JSON SCHEMA - adicionar no pom o json schema- biblioteca json-schema-validator- valida daods jsonorg.json- cira, manipula e consulta objetos JSON em java.
+    Entrar no site https://extendsclass.com/json-schema-validator.html 
+    colar o json na pasta schemas
+    Entendendo a estrutura do json gerado: $schema - versao json usada
+    $id: id
+    title- título
+    type: espera um "object"
+    required: lista de campos obrigatórios
+    properties: propriedades dos objetos esperados
+
+usando tags nos testes
+
+@regressivo - tag usada para marcar testes qie garrantem que mudanças recentes no codigo nao introduzem novos erros 
+@smoke : marcar testes rápidos que verificam as principais funcionalidades da aplicaçã 
+@funcional: testes que validam funcionalidades@desempenho: avalia desempenho da aplicação 
+@ padrão - testes que devem ser executados regularmente
+
+O TestRunner é responsável por integrar o framework de teste , como o Cucumber, com a nossa suíte de testes automatizados. Usa tags para filtrar apenas os cenáriso desejados
+package runner;
+import org.junit.runner.RunWith;
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
+@RunWith(Cucumber.class)
+@CucumberOptions(
+        features = "src/test/resources/features",
+        glue = "steps",
+        tags = "@regressivo",
+        plugin = {"html:target/cucumber-reports.html"}
+)
+public class TestRunner {
+}
+
+Usando hooks nos Testes
+
+Hooks são metodos especiais que permitem executar código específico antes e depois dos testes.
+src/test/java - usar anotações @Before, @After, @BeforeAll, e @AfterAll
+
+@BeforeAll- prepara ambiente global antes da execução de todos os testes
+@AfterAll - limpa o ambiente global após a execução de todos os testes
+@Before - chamado antes de cada cenário 
+@After - é chamado após cada cenário para limpar e reverter mudanças feitas drante o teste
