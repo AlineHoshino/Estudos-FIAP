@@ -274,3 +274,21 @@ src/test/java - usar anotações @Before, @After, @BeforeAll, e @AfterAll
 @AfterAll - limpa o ambiente global após a execução de todos os testes
 @Before - chamado antes de cada cenário 
 @After - é chamado após cada cenário para limpar e reverter mudanças feitas drante o teste
+
+Usando o Maven para rodar os testes
+no pom: <build>    
+    <plugins>        
+        <plugin>            
+            <groupId>org.apache.maven.plugins</groupId>            
+            <artifactId>maven-surefire-plugin</artifactId>            
+            <version>3.0.0-M5</version>            
+            <configuration>                
+                <includes>                    
+                    <include>**/TestRunner.java</include>                
+                </includes>            
+            </configuration>        
+        </plugin>    
+    </plugins>
+</build>
+
+navegue ate o projeto e digite mvn clean test
