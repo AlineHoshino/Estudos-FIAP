@@ -12,3 +12,7 @@ scanf("%d", &x); - & - endereço de memoria
 a função scanf() não apenas lê um valor digitado no teclado e o armazena em uma variavel de programa, mas tambem realiza a conversao de tipo em funçao da especificação do programador
 função getchar()- obter caracteres
 
+Uma string em C é um vetor de caracteres.
+biblioteca string.h - tem concatenação
+
+struct 
