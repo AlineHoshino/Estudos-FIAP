@@ -15,4 +15,5 @@ função getchar()- obter caracteres
 Uma string em C é um vetor de caracteres.
 biblioteca string.h - tem concatenação
 
-struct 
+struct - é uma variável nova, quando usa vetor eles tem o mesmo tipo, struct armazena diversos tipos de dados diferentes
+atof converte sring para float
