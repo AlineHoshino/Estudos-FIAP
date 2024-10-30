@@ -22,3 +22,8 @@ variável do tipo ponteiro recebe um endereço de memória
 variavel com asterisco é do tipo ponteiro 
 int *printf
 ptr = &x;  
+
+Como a função do tipo void nao tem retorno, NÃO pode fazer assim: algo = exemplo(a, &d, &m)
+só pode ser assim: exemplo(a, &d, &m)
+
+(*p_cad).cod - atualizando o struct através do ponteiro, outro jeito de fazer : &p_cad->cod
