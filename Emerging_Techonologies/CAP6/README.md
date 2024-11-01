@@ -32,3 +32,14 @@
 
 9. **Node-RED**:
    - Ferramenta visual para criar aplicações IoT conectando dispositivos, APIs e serviços.
+
+
+Fazer login no tinkercad, depois criar projeto:
+![bateria](img/bateria.png)
+
+Resistor controla a quantidade de corrente
+Protoboard consiste em uma placa didática composta de uma mariz de contatos, que permite a construção de circuitos sem a necessidade de efetuar a solda dos componentes.
+![arduino](img/placa.png)
+
+Conversor analógico digital - pega a tensao do mundo real e converte em 0-1
+
