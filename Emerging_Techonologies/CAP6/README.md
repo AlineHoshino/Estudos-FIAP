@@ -67,3 +67,5 @@ O MQTT (Message Queuing Telemetry Transport) é um protocolo de comunicação le
 
 O MQTT é amplamente utilizado em aplicações onde a comunicação entre dispositivos é essencial, como em automação residencial, monitoramento de condições ambientais, e outras soluções de IoT.
 
+Gateway autentica os dispositivos que podem operar naquela rede
+Existem 3 tipos de noes  - entrada, processamento e saída .
