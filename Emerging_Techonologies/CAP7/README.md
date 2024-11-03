@@ -78,3 +78,19 @@ O **Samsung ARTIK** é uma plataforma de IoT que tem como foco facilitar a adoç
 
 Essas características fazem do Samsung ARTIK uma opção atraente para empresas que desejam adotar a IoT de forma prática e segura. 
 
+desenvolvendo soluções com dispositivos:
+
+
+O caso Mirai envolve uma vulnerabilidade em dispositivos IoT (Internet das Coisas), como câmeras de segurança, roteadores e até babás eletrônicas, que foram usados em um dos maiores ataques cibernéticos da história.
+
+Em 2016, os hackers criaram um software malicioso (malware) chamado Mirai, que explorava a falta de segurança desses dispositivos. A maioria dos aparelhos IoT vem com senhas padrão de fábrica, como "admin" ou "password", e muitas pessoas não as trocam. O Mirai vasculhava a internet em busca de dispositivos com essas senhas padrão. Quando os encontrava, infectava o aparelho, transformando-o em parte de uma rede de "zumbis" (um botnet).
+
+Essa rede de dispositivos infectados foi usada para lançar ataques DDoS (Distributed Denial of Service). Em um ataque DDoS, milhares de dispositivos mandam solicitações para um servidor ao mesmo tempo, até ele ficar sobrecarregado e sair do ar. Foi o que aconteceu em 2016: o botnet Mirai fez grandes sites e serviços online, como Netflix, Twitter e Spotify, ficarem indisponíveis por várias horas.
+
+Esse caso mostrou como a falta de segurança em dispositivos IoT pode ter consequências graves, afetando até mesmo serviços de internet amplamente usados. Ele também alertou fabricantes e usuários sobre a importância de proteger esses dispositivos com senhas fortes e atualizações de segurança.
+
+Estudo feito pela Gartner- 3 funcionalidaes esseenciais para uma boa plataforma IOT:
+
+- suporte a aplicações
+- consolidação de dados e armazenamento
+- gerenciamento de conectividade
