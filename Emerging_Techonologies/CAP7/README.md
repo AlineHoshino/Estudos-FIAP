@@ -34,3 +34,47 @@
    - A escolha da plataforma ideal depende das necessidades do cliente, destacando a importância da adaptação rápida às tecnologias, segurança, escalabilidade e personalização.
 
 Esse resumo captura os principais pontos discutidos na aula sobre IoT e suas aplicações em ambientes corporativos. Se precisar de mais ajuda com algo específico, fique à vontade para perguntar!
+
+EXEMPLOS DE SOLUÇÕES CORPORATIVAS:
+
+Mcrosoft IOT hub - Azure IoT - ferramentas voltadas para internet das coisas 
+Plataforma Dojot open source
+
+A **HPE Universal IoT Platform** é uma solução modular e escalável que se destaca por oferecer:
+
+- **Independência de Fornecedores**: Permite integração com diversas tecnologias sem a dependência de um único fornecedor.
+- **Segurança Incorporada**: Recursos de segurança são integrados à plataforma, garantindo proteção dos dados e dispositivos conectados.
+- **Suporte a Ambientes Locais ou em Nuvem**: Flexibilidade para operar em diferentes ambientes, conforme as necessidades do cliente.
+- **Facilidade de Escalabilidade**: A plataforma é projetada para crescer à medida que os requisitos do negócio se expandem.
+
+Essas características fazem da HPE Universal IoT Platform uma escolha robusta para empresas que buscam implementar soluções de IoT de forma segura e eficiente.
+
+O **Siemens MindSphere** é uma plataforma IoT que foca em conectar aplicações industriais. Suas principais características incluem:
+
+- **Sistema Operacional Aberto**: Permite a integração de várias aplicações, proporcionando flexibilidade no uso de diferentes tecnologias.
+- **Interoperabilidade**: Focado em facilitar a comunicação entre dispositivos e sistemas de diferentes fabricantes.
+- **Rede de Parceiros**: Oferece suporte a um amplo ecossistema de parceiros, possibilitando a criação de soluções colaborativas.
+- **Análise de Dados**: Ferramentas integradas para a extração de insights a partir dos dados coletados, melhorando a eficiência operacional.
+
+Essas funcionalidades tornam o Siemens MindSphere uma escolha forte para indústrias que desejam adotar soluções de IoT de forma eficaz e aproveitar o potencial da análise de dados em suas operações. 
+
+Amazon AWS IOT - disponibiliza autenticação e criptografia nos diferenets pontos de conexão
+
+O **Amazon AWS IoT** é uma plataforma que conecta e gerencia dispositivos em um ecossistema IoT. Suas principais características incluem:
+
+- **Conexão de Dispositivos**: Permite a integração de diversos dispositivos, facilitando a comunicação entre eles.
+- **Gerenciamento de Dispositivos**: Oferece ferramentas para controlar e monitorar os dispositivos conectados.
+- **Autenticação forte**: Implementa métodos de autenticação robustos, garantindo a segurança na comunicação entre dispositivos.
+- **Capacidade Offline**: Os dispositivos podem ser conectados e geridos mesmo quando estão offline, aumentando a resiliência da plataforma.
+
+Essas funcionalidades fazem do Amazon AWS IoT uma solução eficaz e segura para empresas que buscam implementar e escalar suas operações IoT de maneira confiável. 
+
+O **Samsung ARTIK** é uma plataforma de IoT que tem como foco facilitar a adoção de soluções IoT em diversos setores. Suas principais características incluem:
+
+- **Segurança Avançada**: Incorpora medidas robustas de segurança para proteger dados e dispositivos conectados.
+- **Interoperabilidade**: Promove a compatibilidade entre diferentes dispositivos e sistemas, facilitando a integração.
+- **Facilidade de Uso**: A plataforma é projetada para ser intuitiva, simplificando o processo de desenvolvimento e implementação de soluções IoT.
+- **Suporte a Diversas Aplicações**: Suporta uma ampla gama de aplicações, permitindo que as empresas adaptem as soluções às suas necessidades específicas.
+
+Essas características fazem do Samsung ARTIK uma opção atraente para empresas que desejam adotar a IoT de forma prática e segura. 
+
