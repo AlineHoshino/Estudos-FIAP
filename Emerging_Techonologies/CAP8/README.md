@@ -53,6 +53,7 @@ Em 1997 - Deep Blue ganhou no xadrez contra o Garry kasparov.
 
 Machine Leaning : fundamentos e aplicações:
 
+Na aprendizagem de maquina os conceitos fundamentais são: interação, adaptação, correção e otimização
 Os dados que pegamos são boas fontes de coletas? Minha base de dados tem outliers? Tem dados preenchidos de forma equivocadas?
 Precisa ter variabilidade. Se tiver dados duplicados pode ter ruídos.
 Limpeza de dados: Remoção de duplicatas, tartamento de valores ausentes,  correção de erros.
