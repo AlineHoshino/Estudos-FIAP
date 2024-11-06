@@ -46,3 +46,28 @@ Inteligencia artifical agrupada em 4 classes:
 **9. Considerações Finais**
 - Modelo eficaz necessita compreensão das etapas de análise, treinamento e interpretação dos dados.
 
+Historia da inteligencia artificial
+
+discussões sobre ia iniciaram em 1856. Em 1965 surgiu o 1 chatbot Eliza. Em 1970 e 1980 surgiu o CYC (enciclopédia
+Em 1997 - Deep Blue ganhou no xadrez contra o Garry kasparov.
+
+Machine Leaning : fundamentos e aplicações:
+
+Os dados que pegamos são boas fontes de coletas? Minha base de dados tem outliers? Tem dados preenchidos de forma equivocadas?
+Precisa ter variabilidade. Se tiver dados duplicados pode ter ruídos.
+Limpeza de dados: Remoção de duplicatas, tartamento de valores ausentes,  correção de erros.
+Transformação de dados:
+Normalização, padronização , codificação one-hot- converte variaveis categoricas em um formato binario
+Redução de dimensionalidae - nem todos os atributos são uteis.
+Seleção de tributos - escolha de variaveis relevantes
+
+Tipos de aprendizado:
+
+- **Supervisionado**: Vou vendo a pergunta e a resposta várias vezes. Exemplo: Mostro muitas fotos minhas, eu coloco um rótulo escrito meu nome. Vai associar com o label. Depois mostro várias fotos do José e escrevo que é o José.
+* Essa técnica chamamos de classificação.
+- **Não Supervisionado**: Nesse tipo de dados só tem as entradas, não tem os rótulos, é como se tirasse a etiqueta com meu nome. A máquina olha as imganes minha e olha as do José e vi perceber que é mais similar as minhas imagens que as do José. Então começa a construir clusters- Esse é o google photos se voce clica no rosto da foto aparece as outras fotos que tem o rosto parecido. 
+* Isso também funciona no streaming, o algoritmo não sabe quem é você, mas percebe que outras pessoas tambem assistiram aquela serie e por similaridade ele conegue te indicar outras séries parecidas.
+* Isso tambem acontece no reels.
+* Tanto o aprendizado supervisionado quanto o não supervisionado trabalham com a base histórica dos dados.
+- **Por Reforço**: Não tem mais dados - não tem fonte para consultar - enquanto interage com o ambiente vai aprendendo. exemplo quando voce tem um cachorrinho filhote e manda ele pegar a bolinha, ele não tem nenhum conhecimento previo disso, mas depois de dar comida quando da certo, ele aprende.
+Isso é usado em jogos, bom para exemplos dificeis e complexos, exemplo fazer um foguete dar ré- dificil ter dados- por isso usa o aprendizado por reforço,então usa simuladores- E vejo qual simulador teve a melhor recompensa.O carro da  Tesla está aprendendo com as regras do jogo.
