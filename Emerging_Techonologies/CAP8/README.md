@@ -71,3 +71,41 @@ Tipos de aprendizado:
 * Tanto o aprendizado supervisionado quanto o não supervisionado trabalham com a base histórica dos dados.
 - **Por Reforço**: Não tem mais dados - não tem fonte para consultar - enquanto interage com o ambiente vai aprendendo. exemplo quando voce tem um cachorrinho filhote e manda ele pegar a bolinha, ele não tem nenhum conhecimento previo disso, mas depois de dar comida quando da certo, ele aprende.
 Isso é usado em jogos, bom para exemplos dificeis e complexos, exemplo fazer um foguete dar ré- dificil ter dados- por isso usa o aprendizado por reforço,então usa simuladores- E vejo qual simulador teve a melhor recompensa.O carro da  Tesla está aprendendo com as regras do jogo.
+
+Qual vai ser a temperatura amanhã?
+
+Regressão polinomial trabalha com polinômios de grau n - x³
+
+Prestar atenção nas métricas
+
+KNN - faz o calculo para os vizinhos proximos, exemplo tem pontos azuis do lado direito e pontos vermelhos do lado esquerdo e surge um ponot verde perto dos pontos vermelhos por intuição aachamos que o verde está mais próximo do vermelho. 
+Métricas de classificação :
+ - acurácia - taxa de acerto
+ - F1 score - 0 e 1 
+ - precisão e recall
+ -matriz de confusão
+
+
+Não supervisionado - Técnica K-means
+
+Desafios em machine learning: Divisao de dados
+
+1 - A técnica de estratificação em machine learning é usada para garantir que as classes (ou categorias) estejam distribuídas de maneira equilibrada entre os conjuntos de treino e teste. Quando você usa estratificação, divide os dados em subconjuntos mantendo a mesma proporção de classes em cada um.
+
+Imagine que você está classificando imagens de gatos e cachorros, e seu conjunto de dados tem 70% de gatos e 30% de cachorros. Ao dividir seus dados em treino e teste, a estratificação ajuda a garantir que ambas as partes mantêm essa proporção de 70/30. Sem estratificação, você corre o risco de acabar com conjuntos de dados que podem estar desequilibrados, o que pode afetar a precisão do seu modelo.
+
+Exemplo prático
+Se você tem 100 imagens, sendo 70 de gatos e 30 de cachorros, uma divisão 80/20 com estratificação resulta em:
+
+Conjunto de treino: 56 gatos e 24 cachorros.
+Conjunto de teste: 14 gatos e 6 cachorros.
+Assim, seu modelo terá uma visão representativa do problema tanto no treino quanto no teste, levando a uma melhor generalização dos resultados.
+
+2- O cross-validation (ou validação cruzada) é uma técnica para avaliar a performance de um modelo de machine learning de forma mais confiável. Em vez de treinar o modelo apenas uma vez em um conjunto de treino e testá-lo em um único conjunto de teste, o cross-validation divide os dados várias vezes para testar o modelo em diferentes partes do conjunto de dados, permitindo uma avaliação mais robusta.
+
+Exemplo prático
+Se você tem um dataset pequeno com 100 exemplos e usa uma 5-fold cross-validation:
+
+Cada fold terá 20 exemplos.
+O modelo será treinado em 80 exemplos e testado em 20 exemplos cinco vezes, mudando o fold de teste a cada rodada.
+Ao final, você terá 5 resultados de desempenho que são então promediados para uma avaliação mais confiável do modelo.
