@@ -165,3 +165,14 @@ Trilha Android
 - [x] Cap07 - Hora do Compliance
 - [x] Cap08 - Quality Assurance
 - [x] Cap09 - Pitch
+
+##  Emerging Technologies
+
+- [x] Cap01 - There and back again
+- [x] Cap02 - É hora de testar
+- [x] Cap03 - Pode trazer a conta!
+- [x] Cap04 - A arquitetura das... Coisas!
+- [x] Cap05 - Uma linguagem heróica 
+- [x] Cap06 - Arduino, o pequeno notável
+- [x] Cap07 - Tá, mas isso é seguro?
+- [x] Cap08 - O que as máquinas aprendem?
