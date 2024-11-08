@@ -110,3 +110,7 @@ Se você tem um dataset pequeno com 100 exemplos e usa uma 5-fold cross-validati
 Cada fold terá 20 exemplos.
 O modelo será treinado em 80 exemplos e testado em 20 exemplos cinco vezes, mudando o fold de teste a cada rodada.
 Ao final, você terá 5 resultados de desempenho que são então promediados para uma avaliação mais confiável do modelo.
+
+Machine learning e Deep learning são subcategorias da IA.
+Deep learning é uma subcategoria do machine learning
+Algoritmos de machine learning devem aprender com seus erros e serem capazes de criar previsões sobre dados aprensentadosD
